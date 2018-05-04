@@ -15,3 +15,31 @@ img{
 	max-width: 100%;
 	height: auto;
 }
+.main-screen{
+	background: #fff;
+	position: relative;
+	z-index: 3;
+}
+.content{
+	position: relative;
+}
+.payment{
+	cursor: pointer;
+	width: 53px;
+	height: 247px;
+	position: absolute;
+	z-index: 2;
+	left: -52px;
+	top: -1px;
+	background: url(../images/payment.png)no-repeat;
+}
+.get-call{
+	width: 97px;
+	height: 247px;
+	position: absolute;
+	z-index: 2;
+	left: -97px;
+	top: 270px;
+	cursor: pointer;
+	background: url(../images/get-call.png)no-repeat;
+}

@@ -86,3 +86,19 @@ $('.hamburger-box').click(function(event) {
     menu.hide()
   }
 });
+
+var clock;
+    
+$(document).ready(function() {
+  var clock;
+
+  clock = $('.clock').FlipClock({
+        clockFace: 'DailyCounter',
+        autoStart: false
+    });
+        
+    clock.setTime(110880);
+    clock.setCountdown(true);
+    clock.start();
+
+});

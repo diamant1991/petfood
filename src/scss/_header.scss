@@ -117,6 +117,28 @@
 	font-family: $myriad;
 
 	&__item{
+		li{
+			position: relative;
+
+			&:last-child{
+				&:after{
+					content: none;
+				}
+			}
+
+			&:after{
+				content: "";
+				display: block;
+				background: #4b4f56;
+				position: absolute;
+				z-index: 2;
+				right: -45px;
+				width: 1px;
+				height: 45px;
+				top: 50%;
+				transform: translate(0, -50%);
+			}
+		}
 		a{
 			color: #fff;
 			text-transform: uppercase;
@@ -215,7 +237,7 @@
   transition-duration: .15s;
   transition-property: transform;
   top: 2px;
-  background-color: #fff;
+  background-color: $red;
 
   &:before{
   	content: "";
@@ -225,7 +247,7 @@
     transition-timing-function: ease;
     transition-duration: .15s;
     transition-property: transform;
-    background-color: #fff;
+    background-color: $red;
     top: -10px;
     top: 8px;
     transition-timing-function: ease;
@@ -240,7 +262,7 @@
     transition-timing-function: ease;
     transition-duration: .15s;
     transition-property: transform;
-    background-color: #fff;
+    background-color: $red;
     bottom: -10px;
     top: 16px;
   }
@@ -250,7 +272,7 @@
 	cursor: pointer;
 
 	a{
-		color: #fff;
+		color: $red;
 	}
 }
 .mobile-menu{

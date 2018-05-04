@@ -14,6 +14,16 @@
 			content: none;
 		}
 	}
+	.payment{
+		left: 0;
+		transform: rotate(180deg);
+		z-index: 4;
+	}
+	.get-call{
+		left: 0;
+		transform: rotate(180deg);
+		z-index: 4;
+	}
 }
 @media(max-width: 1399px){
 	.slider-prev--carousel{
@@ -29,6 +39,15 @@
 	}
 	.phone{
 		font-size: 16px;
+	}
+	.payment{
+		display: none;
+	}
+	.get-call{
+		display: none;
+	}
+	.menu__item li:after{
+		right: -22px;
 	}
 	.slider__item{
 		height: 360px;
@@ -50,6 +69,15 @@
 @media(max-width: 991px){
 	.hidden-md{
 		display: none;
+	}
+	.catalog{
+		border: 1px solid #f2f2f2;
+	}
+	.menu__item li:after{
+		content: none;
+	}
+	.top-menu a{
+		color: #fff;
 	}
 	.top-menu{
 		font-size: 15px;
