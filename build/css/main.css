@@ -3372,7 +3372,8 @@ img {
   color: #fff; }
 
 .top-panel {
-  padding: 10px 0; }
+  padding: 10px 0;
+  background: #fff; }
 
 .top-menu {
   font-size: 13.5px;
@@ -3382,21 +3383,23 @@ img {
     .top-menu li + li {
       margin-left: 40px; }
   .top-menu a {
-    color: #fff; }
+    color: #3e4146; }
     .top-menu a:hover {
-      color: #db1551; }
+      color: #fe900f; }
 
 .time {
   opacity: 0.66;
+  color: #3e4146;
   font-size: 14px; }
 
 .phone {
   font-size: 17px;
   font-family: "Lato-Semibold";
-  color: #db1551; }
+  color: #fe900f; }
 
 .header-center {
-  padding: 30px 0; }
+  padding: 30px 0;
+  background: #fff; }
 
 .search {
   position: relative;
@@ -3406,7 +3409,7 @@ img {
     display: block;
     width: 100%;
     background: none;
-    border: 1px solid #fefefe;
+    border: 1px solid #3e4146;
     -webkit-border-radius: 50px;
        -moz-border-radius: 50px;
             border-radius: 50px;
@@ -3414,13 +3417,13 @@ img {
     padding-right: 80px;
     outline: 0;
     font-family: "Lato-Regular";
-    color: #fff; }
+    color: #3e4146; }
   .search__btn {
     position: absolute;
     z-index: 2;
     right: 0;
     top: 0;
-    background: url(../images/lapa.png) 50% no-repeat #db1551;
+    background: url(../images/lapa.png) 50% no-repeat #fe900f;
     width: 70px;
     height: 100%;
     border: 0;
@@ -3433,16 +3436,16 @@ img {
 .profile {
   font-size: 14px; }
   .profile a {
-    color: #fff; }
+    color: #3e4146; }
   .profile__text {
     margin-right: 10px; }
 
 .cart {
   position: relative; }
   .cart a i {
-    color: #fff; }
+    color: #3e4146; }
   .cart__price {
-    color: #db1551;
+    color: #fe900f;
     margin-left: 10px;
     font-family: "Lato-Bold"; }
   .cart .fa {
@@ -3454,7 +3457,7 @@ img {
     top: -4px;
     width: 17px;
     height: 17px;
-    background: #db1551;
+    background: #fe900f;
     line-height: 15px;
     text-align: center;
     color: #fff;
@@ -3747,7 +3750,7 @@ img {
   cursor: pointer;
   padding-right: 3px; }
   .slider-prev:hover {
-    background: #db1551; }
+    background: #fe900f; }
   .slider-prev--main {
     background: #3e4146;
     position: absolute;
@@ -3770,7 +3773,7 @@ img {
   top: 35%;
   padding-left: 3px; }
   .slider-next:hover {
-    background: #db1551; }
+    background: #fe900f; }
   .slider-next--main {
     background: #3e4146;
     position: absolute;
@@ -3827,7 +3830,7 @@ img {
     vertical-align: middle;
     margin: 5px; }
     .slick-dots li.slick-active button {
-      background: #db1551; }
+      background: #fe900f; }
   .slick-dots button {
     border: 0;
     outline: 0;
@@ -3909,7 +3912,7 @@ h4 {
   -webkit-border-radius: 50px;
      -moz-border-radius: 50px;
           border-radius: 50px;
-  background: #db1551;
+  background: #fe900f;
   display: inline-block;
   color: #fff;
   line-height: 35px;
@@ -3945,7 +3948,7 @@ h4 {
     .catalog__title a {
       color: #3e4146; }
       .catalog__title a:hover {
-        color: #db1551; }
+        color: #fe900f; }
   .catalog__menu {
     font-size: 15px;
     font-family: "MyriadProSemibold";
@@ -3953,7 +3956,7 @@ h4 {
     .catalog__menu li {
       position: relative; }
       .catalog__menu li:hover a {
-        color: #db1551; }
+        color: #fe900f; }
     .catalog__menu a {
       color: #3e4146;
       display: block;
@@ -4003,7 +4006,7 @@ h4 {
   .product-name a {
     color: #3e4146; }
     .product-name a:hover {
-      color: #db1551; }
+      color: #fe900f; }
 
 .product-prices__item {
   padding: 10px 25px;
@@ -4013,7 +4016,7 @@ h4 {
     border-bottom: 0; }
 
 .product-sale {
-  color: #db1551; }
+  color: #fe900f; }
 
 .product-prev-price {
   text-decoration: line-through;
@@ -4021,12 +4024,12 @@ h4 {
   text-align: right; }
 
 .product-today-price {
-  color: #db1551;
+  color: #fe900f;
   font-family: "Lato-Bold";
   text-align: right; }
 
 .product-buy i {
-  color: #db1551;
+  color: #fe900f;
   font-size: 20px; }
 
 .product-carousel {
@@ -4060,7 +4063,7 @@ h4 {
     margin-left: 25px; }
   .btn-red {
     width: 220px;
-    background: #db1551; }
+    background: #fe900f; }
   .btn-dark {
     width: 250px;
     background: #3e4146; }
@@ -4080,7 +4083,7 @@ h4 {
      -moz-border-radius: 50px;
           border-radius: 50px;
   color: #fff;
-  background: #db1551; }
+  background: #fe900f; }
 
 .news {
   padding-bottom: 40px; }
@@ -4134,7 +4137,7 @@ h4 {
     top: -270px;
     background: url(../images/big-dog.png) no-repeat; }
   .footer__item {
-    max-width: 215px; }
+    max-width: 245px; }
   .footer__form {
     padding-right: 125px; }
   .footer__logo {
@@ -4144,7 +4147,7 @@ h4 {
     .footer__contacts div + div {
       margin-top: 7px; }
   .footer__phone {
-    color: #db1551;
+    color: #fe900f;
     font-family: "Lato-Semibold";
     font-size: 18px; }
   .footer__menu {
@@ -4154,7 +4157,7 @@ h4 {
     .footer__menu a {
       color: #fff; }
       .footer__menu a:hover {
-        color: #db1551; }
+        color: #fe900f; }
   .footer__buy__text {
     line-height: 1.5;
     font-size: 15px;
@@ -4191,7 +4194,7 @@ h4 {
   .social-item + .social-item {
     margin-left: 25px; }
   .social-item:hover {
-    background: #db1551;
+    background: #fe900f;
     color: #fff; }
 
 @media (max-width: 1600px) {
