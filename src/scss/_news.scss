@@ -1,0 +1,26 @@
+.news{
+	padding-bottom: 40px;
+	
+	.item-title{
+		padding-top: 40px;
+		border-top: 1px solid #f2f2f2;
+	}
+	
+	&__content{
+		width: calc(100% - 300px);
+		border: 1px solid #f2f2f2;
+		max-height: 435px;
+	}
+	&__img{
+		height: 435px;
+		background-repeat: no-repeat;
+		background-position: 50%;
+		background-size: cover;
+	}
+	&__descr{
+		padding-top: 40px;
+	}
+}
+.banner{
+	width: 280px;
+}

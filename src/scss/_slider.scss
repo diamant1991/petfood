@@ -1,0 +1,15 @@
+.slider{
+	position: relative;
+	
+	&__item{
+		height: 450px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50%;
+	}
+	&__descr{
+		height: 100%;
+		padding: 10px 40px;
+		max-width: 485px;
+	}
+}

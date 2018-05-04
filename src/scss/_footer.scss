@@ -1,0 +1,120 @@
+.footer-top{
+	background: #3e4146;
+	padding-top: 75px;
+	padding-bottom: 40px;
+}
+.footer{
+	color: #fff;
+	position: relative;
+
+	&:before{
+		content: "";
+		display: block;
+		position: absolute;
+		z-index: 2;
+		left: 0;
+		width: 267px;
+		height: 313px;
+		top: -241px;
+		background: url(../images/big-cat.png)no-repeat;
+	}
+	&:after{
+		content: "";
+		display: block;
+		position: absolute;
+		z-index: 2;
+		right: 0;
+		width: 417px;
+		height: 365px;
+		top: -270px;
+		background: url(../images/big-dog.png)no-repeat;
+	}
+
+	&__item{
+		max-width: 215px;
+	}
+
+	&__form{
+		padding-right: 125px;
+	}
+
+	&__logo{
+		margin-bottom: 30px;
+	}
+
+	&__contacts{
+		margin-bottom: 60px;
+
+		 div{
+			+ div{
+				margin-top: 7px;
+			}
+		}
+	}
+	
+	&__phone{
+		color: $red;
+		font-family: $semibold;
+		font-size: 18px;
+	}
+
+	&__menu{
+		font-size: 16px;
+
+		li{
+			+ li{
+				margin-top: 15px;
+			}
+		}
+		a{
+			color: #fff;
+
+			&:hover{
+				color: $red;
+			}
+		}
+	}
+
+	&__buy{
+		&__text{
+			line-height: 1.5;
+			font-size: 15px;
+			font-family: $bold;
+			margin-bottom: 15px;
+		}
+	}
+}
+.footer-center{
+	padding: 40px 0;
+	background: #2c2e32;
+}
+.copyright{
+	text-align: center;
+	font-family: $medium;
+	background: #3e4146;
+	padding: 35px 0;
+	font-size: 14px;
+}
+.subscribe-form{
+	width: 305px;
+}
+.social-item{
+	display: inline-block;
+	vertical-align: middle;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	color: $main;
+	background: #fff;
+	text-align: center;
+	line-height: 37px;
+	font-size: 20px;
+
+	+ .social-item{
+		margin-left: 25px;
+	}
+	&:hover{
+		background: $red;
+		color: #fff;
+	}
+}

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,900');
+
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('../fonts/MyriadPro/MyriadPro.eot');
+    src: url('../fonts/MyriadPro/MyriadPro.eot') format('embedded-opentype'),
+         url('../fonts/MyriadPro/MyriadPro.woff2') format('woff2'),
+         url('../fonts/MyriadPro/MyriadPro.woff') format('woff'),
+         url('../fonts/MyriadPro/MyriadPro.ttf') format('truetype'),
+         url('../fonts/MyriadPro/MyriadPro.svg#MyriadPro') format('svg');
+}
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url('../fonts/Lato-Regular/Lato-Regular.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/Lato-Regular/Lato-Regular.woff') format('woff'), 
+  url('../fonts/Lato-Regular/Lato-Regular.ttf')  format('truetype'), 
+  url('../fonts/Lato-Regular/Lato-Regular.svg#Lato-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Italic';
+  src: url('../fonts/Lato-Italic/Lato-Italic.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/Lato-Italic/Lato-Italic.woff') format('woff'), 
+  url('../fonts/Lato-Italic/Lato-Italic.ttf')  format('truetype'), 
+  url('../fonts/Lato-Italic/Lato-Italic.svg#Lato-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Medium';
+  src: url('../fonts/Lato-Medium/Lato-Medium.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/Lato-Medium/Lato-Medium.woff') format('woff'),
+  url('../fonts/Lato-Medium/Lato-Medium.ttf')  format('truetype'), 
+  url('../fonts/Lato-Medium/Lato-Medium.svg#Lato-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Semibold';
+  src: url('../fonts/Lato-Semibold/Lato-Semibold.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/Lato-Semibold/Lato-Semibold.woff') format('woff'), 
+  url('../fonts/Lato-Semibold/Lato-Semibold.ttf')  format('truetype'), 
+  url('../fonts/Lato-Semibold/Lato-Semibold.svg#Lato-Semibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url('../fonts/Lato-Bold/Lato-Bold.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/Lato-Bold/Lato-Bold.woff') format('woff'), 
+  url('../fonts/Lato-Bold/Lato-Bold.ttf')  format('truetype'), 
+  url('../fonts/Lato-Bold/Lato-Bold.svg#Lato-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Black';
+  src: url('../fonts/Lato-Black/Lato-Black.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/Lato-Black/Lato-Black.woff') format('woff'), 
+  url('../fonts/Lato-Black/Lato-Black.ttf')  format('truetype'), 
+  url('../fonts/Lato-Black/Lato-Black.svg#Lato-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'MyriadProSemibold';
+    src: url('../fonts/MyriadProSemibold/MyriadProSemibold.eot');
+    src: url('../fonts/MyriadProSemibold/MyriadProSemibold.eot') format('embedded-opentype'),
+         url('../fonts/MyriadProSemibold/MyriadProSemibold.woff2') format('woff2'),
+         url('../fonts/MyriadProSemibold/MyriadProSemibold.woff') format('woff'),
+         url('../fonts/MyriadProSemibold/MyriadProSemibold.ttf') format('truetype'),
+         url('../fonts/MyriadProSemibold/MyriadProSemibold.svg#MyriadProSemibold') format('svg');
+}

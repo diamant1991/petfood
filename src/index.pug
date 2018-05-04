@@ -1,0 +1,211 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.wrapper
+		include pug/header
+		.content
+			include pug/main-screen
+			include pug/services
+			.deals
+				.container
+					h3.item-title Лучшие предложения
+					.row
+						.col-lg-3.col-sm-6
+							include pug/product-item
+						.col-lg-3.col-sm-6
+							include pug/product-item
+						.col-lg-3.col-sm-6
+							include pug/product-item
+						.col-lg-3.col-sm-6
+							include pug/product-item
+			.brands
+				.container
+					h3.item-title Популярные бренды
+					.brands__content
+						.slider-prev.slider-prev--brands.slider-prev--carousel
+							i.fa.fa-angle-left
+						.slider-next.slider-next--brands.slider-next--carousel
+							i.fa.fa-angle-right
+						.brands__carousel
+							div
+								.brands__item.row.no-gutters.align-items-center
+									div
+										img(src="images/Royal_Canin_logo.svg.png", alt="")
+							div
+								.brands__item.row.no-gutters.align-items-center
+									div
+										img(src="images/Royal_Canin_logo.svg.png", alt="")
+							div
+								.brands__item.row.no-gutters.align-items-center
+									div
+										img(src="images/Royal_Canin_logo.svg.png", alt="")
+							div
+								.brands__item.row.no-gutters.align-items-center
+									div
+										img(src="images/Royal_Canin_logo.svg.png", alt="")
+							div
+								.brands__item.row.no-gutters.align-items-center
+									div
+										img(src="images/Royal_Canin_logo.svg.png", alt="")
+							div
+								.brands__item.row.no-gutters.align-items-center
+									div
+										img(src="images/Royal_Canin_logo.svg.png", alt="")
+			.container
+				.buttons
+					a(href="#").btn.btn-red Новинки
+					a(href="#").btn.btn-dark Не забудь купить
+				.product-carousel-block
+					.slider-prev.slider-prev--product.slider-prev--carousel
+						i.fa.fa-angle-left
+					.slider-next.slider-next--product.slider-next--carousel
+						i.fa.fa-angle-right
+					.product-carousel
+						div
+							include pug/product-item
+						div
+							include pug/product-item
+						div
+							include pug/product-item
+						div
+							include pug/product-item
+						div
+							include pug/product-item
+			include pug/news.pug
+			include pug/about.pug
+	footer.footer
+		.footer-top
+			.container
+				.row.no-gutters.justify-content-between
+					.footer__item
+						.footer__logo
+							a(href="#")
+								img(src="images/footer-logo.png", alt="")
+						.footer__contacts
+							.footer__phone
+								div 8 (812) 983-65-45
+								div 8 (812) 672-78-02
+							.footer__info
+								div (пн.-пт. 10:00-19:00)
+								div petfood24@mail.rus
+						.footer__buy
+							.footer__buy__text
+								| Оплатите свой товар быстро и без траты времени
+							a(href="#").btn-radius Оплатить
+					.footer__item
+						h4 О магазине
+						ul.footer__menu
+							li
+								a(href="#") Контакты
+							li
+								a(href="#") Доставка и оплата 
+							li
+								a(href="#") Как заказать товар
+							li
+								a(href="#") Вакансии
+							li
+								a(href="#") Отзывы
+					.footer__item
+						h4 Популярные бренды
+						ul.footer__menu
+							li
+								a(href="#") Royal canin
+							li
+								a(href="#") Pro plan
+							li
+								a(href="#") Grandolf
+							li
+								a(href="#") Gina
+							li
+								a(href="#") Flexi
+					.footer__item
+						h4 Для клиента
+						ul.footer__menu
+							li
+								a(href="#") Вопросы и ответы
+							li
+								a(href="#") Техническая поддержка
+							li
+								a(href="#") Жалобы и пожелания
+							li
+								a(href="#") Магазин
+							li
+								a(href="#") Письмо директору
+							li
+								a(href="#") Бонусная программа
+							li
+								a(href="#") Условия возврата
+					.footer__item
+						h4 Дополнительно
+						ul.footer__menu
+							li
+								a(href="#") Акции
+							li
+								a(href="#") Производители
+							li
+								a(href="#") Новости
+							li
+								a(href="#") Статьи
+							li
+								a(href="#") Форум 
+							li
+								a(href="#") Скидки
+							li
+								a(href="#") Энциклопедия 
+		.footer-center
+			.container
+				.row.no-gutters.align-items-center.justify-content-between
+					.paypal
+						img(src="images/paypal.png", alt="")
+					.footer__form
+						h4.footer-center__title подписка на рассылку
+						.search.subscribe-form
+							input(type="text" placeholder="Email").search__field
+							button(type="submit").search__btn
+					.footer__social
+						h4.footer-center__title мы в соц. сетях
+						a(href="#").social-item
+							i.fa.fa-vk
+						a(href="#").social-item
+							i.fa.fa-facebook
+						a(href="#").social-item
+							i.fa.fa-twitter
+		.copyright
+			.container
+				| (с) PetFood24, 2010-2018. Все права защищены
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					
+
+
+
+
+
+			
+
