@@ -1,0 +1,47 @@
+.register{
+	&__info{
+		max-width: 575px;
+		padding: 20px 30px;
+		background: #e2ebf1;
+		margin-bottom: 35px;
+		font-size: 18px;
+		font-family: $medium;
+
+		a{
+			color: $red;
+		}
+	}
+	&__form{
+		width: 450px;
+
+		.form-label{
+			width: 150px;
+			font-size: 16px;
+			font-family: $medium;
+		}
+	}
+	&__item{
+		border: 1px solid #f2f2f2;
+
+		&__content{
+			padding: 40px 30px;
+		}
+	}
+}
+.register-header{
+	text-align: left;
+	padding: 15px 30px;
+}
+.register__item{
+	&--submit{
+		border: 0;
+		padding-left: 180px;
+	}
+	+ .register__item{
+		margin-top: 30px;
+	}
+}
+.captcha-btn{
+	font-size: 12px;
+	cursor: pointer;
+}

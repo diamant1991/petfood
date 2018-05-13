@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<title>
+		</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div class="wrapper" style="padding-top: 30px"><a class="btn btn-yellow" href="#" data-toggle="modal" data-target="#one-click">Купить в один клик</a><a class="btn btn-yellow" href="#" data-toggle="modal" data-target="#buy-modal">Купить</a></div>
+		<div class="modal fade" id="one-click" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5>покупка в один клик</h5>
+					</div>
+					<div class="modal-form">
+						<form>
+							<div class="form-group row no-gutters align-items-center justify-content-between">
+								<div class="form-label"> <span>ФИО</span><span class="red-star">*</span></div>
+								<input class="form-control form-control--modal" type="text">
+							</div>
+							<div class="form-group row no-gutters align-items-center justify-content-between">
+								<div class="form-label"> <span>Телефон</span><span class="red-star">*</span></div>
+								<input class="form-control form-control--modal" type="text">
+							</div>
+							<div class="form-group row no-gutters align-items-center justify-content-between">
+								<div class="form-label"> <span>E-mail</span><span class="red-star">*</span></div>
+								<input class="form-control form-control--modal" type="text">
+							</div>
+							<div class="form-group row no-gutters align-items-center justify-content-between">
+								<div class="form-label"> <span>Адрес доставки</span><span class="red-star">*</span></div>
+								<input class="form-control form-control--modal" type="text">
+							</div>
+							<div class="form-group form-group--submit">
+								<button class="link-btn link-btn--product link-btn--modal" type="submit">Купить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="buy-modal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header"><a class="modal-close" href="#" data-dismiss="modal" aria-label="Close"></a>
+						<h5>Кусочки в соусе для котят 4-12 мес.</h5>
+					</div>
+					<div class="modal-wrapper">
+						<div class="row row no-gutters justify-content-between">
+							<div class="col-sm-4"><img src="images/test-img.png" alt=""></div>
+							<div class="col-sm-7 modal-info">
+								<div class="modal-info__header">
+									<h4>Royal Canin</h4>
+									<div>Кусочки в соусе для котят 4-12 мес.</div>
+									<div class="b-review__form--rating j-rating small-rating middle clearfix"><a class="b-review__form--star fa fa-star is-active" data-index="1"></a><a class="b-review__form--star fa fa-star is-active" data-index="2"></a><a class="b-review__form--star fa fa-star is-active" data-index="3"></a><a class="b-review__form--star fa fa-star is-active" data-index="4"></a><a class="b-review__form--star fa fa-star is-active" data-index="5"></a></div>
+								</div>
+								<div class="modal-info__content">
+									<div class="card-price">4 820 р.</div>
+									<div class="card-price-prev">1 500 р.</div>
+									<div class="modal-info__choice">Ваш выбор: 85г - 49р</div>
+									<select class="select-item select-item--modal">
+										<option>85г - 49р</option>
+										<option>90г - 49р</option>
+										<option>95г - 49р</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-services">
+						<div class="row">
+							<div class="col-sm-3 col-6">
+								<div class="modal-services__icon row no-gutters align-items-center">
+									<div><img src="images/modal-serv1.png" alt=""></div>
+								</div>
+								<div class="modal-services__text">Бесплатная доставка от 780р</div>
+							</div>
+							<div class="col-sm-3 col-6">
+								<div class="modal-services__icon row no-gutters align-items-center">
+									<div><img src="images/modal-serv2.png" alt=""></div>
+								</div>
+								<div class="modal-services__text">Гарантия качества</div>
+							</div>
+							<div class="col-sm-3 col-6">
+								<div class="modal-services__icon row no-gutters align-items-center">
+									<div><img src="images/modal-serv3.png" alt=""></div>
+								</div>
+								<div class="modal-services__text">Возможен самовывоз</div>
+							</div>
+							<div class="col-sm-3 col-6">
+								<div class="modal-services__icon row no-gutters align-items-center">
+									<div><img src="images/modal-serv4.png" alt=""></div>
+								</div>
+								<div class="modal-services__text">Круглосуточный сервис</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<div class="row no-gutters align-items-center justify-content-between">
+							<div class="modal-footer__checkbox">
+								<input class="checkbox checkbox--yellow" type="checkbox" id="modal1">
+								<label for="modal1">Отложить</label>
+							</div><a class="btn btn-black btn-black--modal" href="#">Купить в 1 клик</a><a class="btn btn-yellow btn-yellow--modal" href="#">Добавить в корзину</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/jquery.scrollbar.min.js"></script>
+		<script src="js/flipclock.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

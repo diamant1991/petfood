@@ -1,0 +1,68 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.wrapper
+		include pug/header
+		.content
+			.payment
+			.get-call
+			.container
+				include pug/breadcrumb
+				.row.no-gutters.justify-content-between
+					.sidebar
+						.sidebar__content
+							ul.sidebar__menu
+								li
+									a(href="#")
+										span.middle.sidebar__menu__icon
+											img(src="images/black-dog.png", alt="")
+										span.middle Товары для собак
+								li
+									a(href="#")
+										span.middle.sidebar__menu__icon
+											img(src="images/black-cat.png", alt="")
+										span.middle Товары для кошек
+								li
+									a(href="#")
+										span.middle.sidebar__menu__icon
+											img(src="images/black-rodens.png", alt="")
+										span.middle Товары для грызунов
+								li
+									a(href="#")
+										span.middle.sidebar__menu__icon
+											img(src="images/black-birds.png", alt="")
+										span.middle Товары для птиц
+								li
+									a(href="#")
+										span.middle.sidebar__menu__icon
+											img(src="images/black-fish.png", alt="")
+										span.middle Товары для рыбок
+								li
+									a(href="#")
+										span.middle.sidebar__menu__icon
+											img(src="images/black-sale.png", alt="")
+										span.middle Акции
+								li
+									a(href="#")
+										span.middle.sidebar__menu__icon
+											img(src="images/black-action.png", alt="")
+										span.middle Распродажа
+					.center-content
+						.product-catalog.row
+							.col-lg-3.col-sm-6
+								include pug/product-catalog-item
+							.col-lg-3.col-sm-6
+								include pug/product-catalog-item
+							.col-lg-3.col-sm-6
+								include pug/product-catalog-item
+							.col-lg-3.col-sm-6
+								include pug/product-catalog-item
+							.col-lg-3.col-sm-6
+								include pug/product-catalog-item
+							.col-lg-3.col-sm-6
+								include pug/product-catalog-item
+		include pug/seo
+	include pug/footer.pug

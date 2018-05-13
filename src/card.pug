@@ -1,0 +1,349 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.wrapper
+		include pug/header
+		.content
+			.payment
+			.get-call
+			.container
+				include pug/breadcrumb
+			.catalog-2lvl.hidden-md
+					.container
+						ul.row.no-gutters
+							li
+								a(href="#").row.no-gutters.align-items-center 
+									div Сухой корм
+							li
+								a(href="#").row.no-gutters.align-items-center 
+									div Консервы
+							li
+								a(href="#").row.no-gutters.align-items-center 
+									div Витамины Лакомства
+							li
+								a(href="#").row.no-gutters.align-items-center 
+									div Шампуни Кондиционеры
+							li
+								a(href="#").row.no-gutters.align-items-center 
+									div Наполнители
+							li
+								a(href="#").row.no-gutters.align-items-center 
+									div Ветеринарная аптека
+							li
+								a(href="#").row.no-gutters.align-items-center 
+									div Гигена
+							li
+								a(href="#").row.no-gutters.align-items-center 
+									div Когтеточки Домики
+			.container
+				.card.row
+					.col-lg-6
+						.card__label
+							img(src="images/Royal_Canin_logo.svg.png", alt="")
+						.card__carousel
+							.card__slider
+								div
+									.card__slider__img.row.no-gutters.align-items-center
+										div
+											img(src="	http://via.placeholder.com/140x270", alt="")
+							.card-thumb-block
+								.thumb-prev.card-btn
+									i.fa.fa-angle-left
+								.thumb-next.card-btn
+									i.fa.fa-angle-right
+								.card__thumb
+									div
+										.card__thumb__item.row.no-gutters.align-items-center
+											div
+												img(src="	http://via.placeholder.com/60x60", alt="")
+									div
+										.card__thumb__item.row.no-gutters.align-items-center
+											div
+												img(src="	http://via.placeholder.com/60x60", alt="")
+									div
+										.card__thumb__item.row.no-gutters.align-items-center
+											div
+												img(src="	http://via.placeholder.com/60x60", alt="")
+									div
+										.card__thumb__item.row.no-gutters.align-items-center
+											div
+												img(src="	http://via.placeholder.com/60x60", alt="")
+									div
+										.card__thumb__item.row.no-gutters.align-items-center
+											div
+												img(src="	http://via.placeholder.com/60x60", alt="")
+									div
+										.card__thumb__item.row.no-gutters.align-items-center
+											div
+												img(src="	http://via.placeholder.com/60x60", alt="")
+							.card__carousel__bottom
+								a(href="#").video-btn.top
+									span.middle.video-btn__icon
+										img(src="images/play.png", alt="")
+									span.middle Видео о товаре
+								.card-review.top
+									.b-review__form--rating.j-rating.small-rating.middle.clearfix
+										a.b-review__form--star.fa.fa-star.is-active(data-index="1")
+										a.b-review__form--star.fa.fa-star.is-active(data-index="2")
+										a.b-review__form--star.fa.fa-star.is-active(data-index="3")
+										a.b-review__form--star.fa.fa-star.is-active(data-index="4")
+										a.b-review__form--star.fa.fa-star(data-index="5")
+									.card-review__number (281 голосов)
+					.col-lg-6.card-right
+						h3.card-title Royal Canin Kitten
+						.card__info
+							.card__info__item.row.no-gutters.justify-content-between
+								div
+									.card__info__top.row.no-gutters.justify-content-between.align-items-end
+										.card__info__weight 0.6 кг      
+										.card__info__sale -4%
+									div Артикул: 10239
+								div
+									.card__info__top.card-price 1 820 р.
+									.card-price-prev 820 р.
+								div
+									.card__info__top.count.clearfix
+										a(href="#").count-btn
+											i.fa.fa-angle-left
+										input(type="text" value="2").count-field
+										a(href="#").count-btn
+											i.fa.fa-angle-right
+									div Бонусы: 82
+							.card__info__item.row.no-gutters.justify-content-between
+								div
+									.card__info__top.row.no-gutters.justify-content-between.align-items-end
+										.card__info__weight 0.6 кг      
+										.card__info__sale -4%
+									div Артикул: 10239
+								div
+									.card__info__top.card-price 1 820 р.
+									.card-price-prev 820 р.
+								div
+									.card__info__top.count.clearfix
+										a(href="#").count-btn
+											i.fa.fa-angle-left
+										input(type="text" value="2").count-field
+										a(href="#").count-btn
+											i.fa.fa-angle-right
+									div Бонусы: 82
+							.card__info__item.row.no-gutters.justify-content-between
+								div
+									.card__info__top.row.no-gutters.justify-content-between.align-items-end
+										.card__info__weight 0.6 кг      
+										.card__info__sale -4%
+									div Артикул: 10239
+								div
+									.card__info__top.card-price 1 820 р.
+									.card-price-prev 820 р.
+								div
+									.card__info__top.count.clearfix
+										a(href="#").count-btn
+											i.fa.fa-angle-left
+										input(type="text" value="2").count-field
+										a(href="#").count-btn
+											i.fa.fa-angle-right
+									div Бонусы: 82
+							.card__info__item.row.no-gutters.justify-content-between
+								div
+									div Ощий вес:  
+									.card__info__weight.card__info__weight--total 12 кг
+								div
+									div Итого:
+									.card-price 13 898 р
+								div
+						.card__btns
+							a(href="#").middle.btn.btn-black Купить в 1 клик
+							a(href="#").middle.btn.btn-yellow 
+								span.middle Добавить в корзину
+								i.fa.fa-shopping-cart.middle
+				.row
+					.col-xl-8.col-lg-7.col-md-6
+						.card-text
+							.card-text__title краткое описание товара
+							.card-text__content
+								.text-scrollbar.scrollbar-rail
+									p 
+										b Hill's Prescription Diet z /d Feline - 
+										span диетический рацион специально разработан для уменьшения проявления аллергических реакций, связанных с приемом пищи, со стороны кожи и ЖКТ. 
+									h5 Ключевые преимущества: 
+									p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem fugiat suscipit quasi quia, ratione excepturi similique, perspiciatis sequi consequuntur adipisci quo ex quae sint fugit cum unde officia dolorum impedit, repudiandae dolor voluptas pariatur. Sequi ducimus ullam, illo temporibus vitae facilis expedita quos suscipit praesentium fugit eum tempora, quaerat reiciendis!
+									p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ea, quasi facere cum minus cupiditate
+					.col-xl-4.col-lg-5.col-md-6
+						.card-text
+							.card-text__title Состав
+							.card-text__content
+								.text-scrollbar.scrollbar-rail
+									p 
+										b Состав
+										span  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem rerum voluptatum, commodi possimus ad alias, veritatis aperiam ut saepe dolores!
+									h5 Гарантированный анализ:
+									table
+										tbody
+											tr
+												td Белки
+												td 72%
+											tr
+												td Жиры
+												td 25%
+											tr
+												td Углеводы
+												td 35%
+					.col-xl-4.col-lg-4.col-md-6
+						.card-text
+							.card-text__title Особенности
+							.card-text__content
+								.text-scrollbar.scrollbar-rail
+									p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, voluptatem cumque reiciendis, dolorem est debitis dicta, repudiandae fugiat ipsam eveniet nisi incidunt unde suscipit! Beatae corporis voluptates necessitatibus laudantium tenetur!
+									p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptate, mollitia modi recusandae culpa fugit exercitationem id impedit illum atque aut eaque tempore quia assumenda maiores suscipit earum animi, accusantium, voluptatem possimus aperiam nesciunt asperiores porro. Mollitia possimus voluptates, architecto, sit dolore facere voluptatibus, vero, sequi fuga aut inventore praesentium.
+									p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur eaque, voluptates, doloremque quisquam id, itaque neque corporis dolore nulla error ratione enim autem ab consequatur quasi consequuntur. Quas quos facere debitis necessitatibus repellendus quaerat possimus veniam perferendis, animi sit. Enim.
+					.col-xl-4.col-lg-4.col-md-6
+						.card-text
+							.card-text__title О бренде
+							.card-text__content
+								.text-scrollbar.scrollbar-rail
+									p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, voluptatem cumque reiciendis, dolorem est debitis dicta, repudiandae fugiat ipsam eveniet nisi incidunt unde suscipit! Beatae corporis voluptates necessitatibus laudantium tenetur!
+									a(href="#") Подробнее о бренде
+					.col-xl-4.col-lg-4.col-md-12
+						.card-text
+							.card-text__title Отзывы (29)
+							.card-text__content
+								.text-scrollbar.scrollbar-rail
+									.review-item
+										.review-header
+											.review-img.table-cell
+												.review-img__item(style="background-image: url(http://via.placeholder.com/40x40)")
+											.review-info.table-cell
+												.review-name Руслан Музиченко
+												.review-city Москва
+										.review-rating
+											.b-review__form--rating.j-rating.small-rating.middle.clearfix
+												.b-review__form--star.fa.fa-star.is-active(data-index="1")
+												.b-review__form--star.fa.fa-star.is-active(data-index="2")
+												.b-review__form--star.fa.fa-star.is-active(data-index="3")
+												.b-review__form--star.fa.fa-star.is-active(data-index="4")
+												.b-review__form--star.fa.fa-star.is-active(data-index="5")
+										.review-text
+											i
+												| Часто покупаю в данном магазине. Доволен всем! Быстрая доставка очень радует
+									.review-item
+										.review-header
+											.review-img.table-cell
+												.review-img__item(style="background-image: url(http://via.placeholder.com/40x40)")
+											.review-info.table-cell
+												.review-name Руслан Музиченко
+												.review-city Москва
+										.review-rating
+											.b-review__form--rating.j-rating.small-rating.middle.clearfix
+												.b-review__form--star.fa.fa-star.is-active(data-index="1")
+												.b-review__form--star.fa.fa-star.is-active(data-index="2")
+												.b-review__form--star.fa.fa-star.is-active(data-index="3")
+												.b-review__form--star.fa.fa-star.is-active(data-index="4")
+												.b-review__form--star.fa.fa-star.is-active(data-index="5")
+										.review-text
+											i
+												| Часто покупаю в данном магазине. Доволен всем! Быстрая доставка очень радует
+									.review-item
+										.review-header
+											.review-img.table-cell
+												.review-img__item(style="background-image: url(http://via.placeholder.com/40x40)")
+											.review-info.table-cell
+												.review-name Руслан Музиченко
+												.review-city Москва
+										.review-rating
+											.b-review__form--rating.j-rating.small-rating.middle.clearfix
+												.b-review__form--star.fa.fa-star.is-active(data-index="1")
+												.b-review__form--star.fa.fa-star.is-active(data-index="2")
+												.b-review__form--star.fa.fa-star.is-active(data-index="3")
+												.b-review__form--star.fa.fa-star.is-active(data-index="4")
+												.b-review__form--star.fa.fa-star.is-active(data-index="5")
+										.review-text
+											i
+												| Часто покупаю в данном магазине. Доволен всем! Быстрая доставка очень радует
+									.review-item
+										.review-header
+											.review-img.table-cell
+												.review-img__item(style="background-image: url(http://via.placeholder.com/40x40)")
+											.review-info.table-cell
+												.review-name Руслан Музиченко
+												.review-city Москва
+										.review-rating
+											.b-review__form--rating.j-rating.small-rating.middle.clearfix
+												.b-review__form--star.fa.fa-star.is-active(data-index="1")
+												.b-review__form--star.fa.fa-star.is-active(data-index="2")
+												.b-review__form--star.fa.fa-star.is-active(data-index="3")
+												.b-review__form--star.fa.fa-star.is-active(data-index="4")
+												.b-review__form--star.fa.fa-star.is-active(data-index="5")
+										.review-text
+											i
+												| Часто покупаю в данном магазине. Доволен всем! Быстрая доставка очень радует
+				.similar-product
+					h3.item-title
+						span.table-cell.item-title__icon
+							img(src="images/title2.png", alt="")
+						span.table-cell Похожие товары
+					.product-carousel-block
+						.slider-prev.slider-prev--product.slider-prev--carousel
+							i.fa.fa-angle-left
+						.slider-next.slider-next--product.slider-next--carousel
+							i.fa.fa-angle-right
+						.product-carousel
+							div
+								include pug/product-item
+							div
+								include pug/product-item
+							div
+								include pug/product-item
+							div
+								include pug/product-item
+							div
+								include pug/product-item
+				.purchase.hidden-md
+					h3.item-title
+						span.table-cell.item-title__icon
+							img(src="images/title4.png", alt="")
+						span.table-cell выгодная покупка
+					.purchase__content.row.no-gutters.align-items-center.justify-content-between
+						.purchase__item
+							.purchase__img.row.no-gutters.align-items-center
+								div
+									img(src="http://via.placeholder.com/55x115", alt="")
+							.purchase__name
+								a(href="#") Hill's Prescription Diet z /d Feline 
+							.purchase__text Z/D для кошек для лечение острых пищевых аллергий
+							.purchase__footer.row.no-gutters.align-items-center.justify-content-between
+								.card__info__weight 0.6 кг
+								.card-price 1 800 р.
+						.purchase__item.purchase__item--symbol
+							.plus-icon
+						.purchase__item
+							.purchase__img.row.no-gutters.align-items-center
+								div
+									img(src="http://via.placeholder.com/55x115", alt="")
+							.purchase__name
+								a(href="#") Hill's Prescription Diet z /d Feline 
+							.purchase__text Z/D для кошек для лечение острых пищевых аллергий
+							.purchase__footer.row.no-gutters.align-items-center.justify-content-between
+								.card__info__weight 0.6 кг
+								.card-price 1 800 р.
+						.purchase__item.purchase__item--symbol
+							.equally-icon
+						.purchase__item.purchase__item--total
+							.purchase__item--total__header.row.no-gutters.justify-content-between
+								div 
+									div Общий вес:
+									.card__info__weight.card__info__weight--large 4 кг
+								div
+									div Итого:
+									.card-price.card-price--large 6 800 р.
+							.economy-total 
+								| Экономия: 
+								b 840 р.
+							a(href="#").btn.btn-yellow
+								span.middle Добавить в корзину
+								i.fa.fa-shopping-cart.middle
+				a(href="#").all-btn
+					span Все товары Royal Canin →
+	include pug/footer.pug

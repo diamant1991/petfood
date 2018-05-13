@@ -1,0 +1,78 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.wrapper
+		include pug/header
+		.content
+			.payment
+			.get-call
+			.container
+				include pug/breadcrumb
+				.register
+					.register__info 
+						| Если вы уже зарегистрированы, пожалуйста, 
+						a(href="#") Авторизуйтесь 
+						| Также вы можете воспользоваться восстановлением пароля
+					.register__item
+						.modal-header.register-header
+							h5 ПОЛЯ ОБЬ’ЯЗАТЕЛЬНЫЕ К ЗАПОЛЕНИЮ
+						.register__item__content
+							.register__form
+								.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+									.form-label
+										span Телефон
+										span.red-star *
+									input(type="text").form-control.form-control--register
+								.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+									.form-label
+										span Пароль
+										span.red-star *
+									input(type="text").form-control.form-control--register
+								.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+									.form-label
+										span Подтвердите пароль
+										span.red-star *
+									input(type="text").form-control.form-control--register
+								.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+									.form-label
+									.form-control--register
+										.captcha
+											img(src="images/captcha.png", alt="")
+											.captcha-btn Обновить
+								.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+									.form-label
+										span Введите капчу
+										span.red-star *
+									input(type="text").form-control.form-control--register
+					.register__item
+						.modal-header.register-header
+							h5 Дополнительные поля не обязательные к заполнению
+						.register__item__content
+							.register__form
+								.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+									.form-label
+										span Фамилия
+									input(type="text").form-control.form-control--register
+								.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+									.form-label
+										span Имя
+									input(type="text").form-control.form-control--register
+								.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+									.form-label
+										span Отвество
+									input(type="text").form-control.form-control--register
+								.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+									.form-label
+										span Адрес
+									input(type="text").form-control.form-control--register
+								.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+									.form-label
+										span E-mail
+									input(type="text").form-control.form-control--register
+					.register__item.register__item--submit
+						button(type="submit").link-btn.link-btn--product.link-btn--modal Регистрация
+
+	include pug/footer.pug

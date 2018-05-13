@@ -1,0 +1,101 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.wrapper(style="padding-top: 30px")
+		a(href="#", data-toggle="modal" data-target="#one-click").btn.btn-yellow Купить в один клик
+		a(href="#", data-toggle="modal" data-target="#buy-modal").btn.btn-yellow Купить
+
+	.modal.fade#one-click(tabindex="-1" role="dialog" aria-hidden="true")
+		.modal-dialog(role="document")
+			.modal-content
+				.modal-header
+					h5 покупка в один клик
+				.modal-form
+					form
+						.form-group.row.no-gutters.align-items-center.justify-content-between
+							.form-label 
+								span ФИО
+								span.red-star *
+							input(type="text").form-control.form-control--modal
+						.form-group.row.no-gutters.align-items-center.justify-content-between
+							.form-label 
+								span Телефон
+								span.red-star *
+							input(type="text").form-control.form-control--modal
+						.form-group.row.no-gutters.align-items-center.justify-content-between
+							.form-label 
+								span E-mail
+								span.red-star *
+							input(type="text").form-control.form-control--modal
+						.form-group.row.no-gutters.align-items-center.justify-content-between
+							.form-label 
+								span Адрес доставки
+								span.red-star *
+							input(type="text").form-control.form-control--modal
+						.form-group.form-group--submit
+							button(type="submit").link-btn.link-btn--product.link-btn--modal Купить
+	.modal.fade#buy-modal(tabindex="-1" role="dialog" aria-hidden="true")
+		.modal-dialog(role="document")
+			.modal-content
+				.modal-header
+					a(href="#", data-dismiss="modal" aria-label="Close").modal-close
+					h5 Кусочки в соусе для котят 4-12 мес.
+				.modal-wrapper
+					.row.row.no-gutters.justify-content-between
+						.col-sm-4
+							img(src="images/test-img.png", alt="")
+						.col-sm-7.modal-info
+							.modal-info__header
+								h4 Royal Canin
+								div Кусочки в соусе для котят 4-12 мес.
+								.b-review__form--rating.j-rating.small-rating.middle.clearfix
+									a.b-review__form--star.fa.fa-star.is-active(data-index="1")
+									a.b-review__form--star.fa.fa-star.is-active(data-index="2")
+									a.b-review__form--star.fa.fa-star.is-active(data-index="3")
+									a.b-review__form--star.fa.fa-star.is-active(data-index="4")
+									a.b-review__form--star.fa.fa-star.is-active(data-index="5")
+							.modal-info__content
+								.card-price 4 820 р.
+								.card-price-prev 1 500 р.
+								.modal-info__choice Ваш выбор: 85г - 49р
+								select.select-item.select-item--modal
+									option 85г - 49р
+									option 90г - 49р
+									option 95г - 49р
+				.modal-services
+					.row
+						.col-sm-3.col-6
+							.modal-services__icon.row.no-gutters.align-items-center
+								div
+									img(src="images/modal-serv1.png", alt="")
+							.modal-services__text
+								| Бесплатная доставка от 780р
+						.col-sm-3.col-6
+							.modal-services__icon.row.no-gutters.align-items-center
+								div
+									img(src="images/modal-serv2.png", alt="")
+							.modal-services__text
+								| Гарантия качества
+						.col-sm-3.col-6
+							.modal-services__icon.row.no-gutters.align-items-center
+								div
+									img(src="images/modal-serv3.png", alt="")
+							.modal-services__text
+								| Возможен самовывоз
+						.col-sm-3.col-6
+							.modal-services__icon.row.no-gutters.align-items-center
+								div
+									img(src="images/modal-serv4.png", alt="")
+							.modal-services__text
+								| Круглосуточный сервис
+				.modal-footer
+					.row.no-gutters.align-items-center.justify-content-between
+						div.modal-footer__checkbox
+							input(type="checkbox").checkbox.checkbox--yellow#modal1
+							label(for="modal1") Отложить
+						a(href="#").btn.btn-black.btn-black--modal Купить в 1 клик
+						a(href="#").btn.btn-yellow.btn-yellow--modal Добавить в корзину
+

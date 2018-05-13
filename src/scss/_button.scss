@@ -35,3 +35,57 @@
 	color: #fff;
 	background: $red;
 }
+.btn-black{
+	color: $main;
+	border: 2px solid $main;
+	border-radius: 50px;
+	width: 200px;
+	height: 42px;
+	line-height: 38px;
+	font-size: 16px;
+}
+.btn-yellow{
+	width: 250px;
+	background: $red;
+	font-size: 16px;
+	border: 0;
+	height: 42px;
+	line-height: 42px;
+	border-radius: 50px;
+
+	.fa{
+		font-size: 22px;
+		margin-left: 15px;
+		position: relative;
+		top: -2px;
+	}
+}
+.all-btn{
+	margin-top: 40px;
+	color: $main;
+	display: block;
+	padding: 20px;
+	text-align: center;
+	background: #e2ebf1;
+
+	span{
+		border-bottom: 1px solid #a0a7ad;
+	}
+}
+.link-btn--modal{
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	width: 145px;
+	height: 45px;
+}
+.btn-black--modal{
+	width: 160px;
+	font-size: 14px;
+	font-family: $semibold;
+}
+.btn-yellow--modal{
+	width: 180px;
+	font-size: 14px;
+	font-family: $semibold;
+}

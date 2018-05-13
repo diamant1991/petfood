@@ -1,0 +1,90 @@
+.sidebar{
+	width: 280px;
+
+	&__content{
+		border: 1px solid #f2f2f2;
+		border-radius: 2px;
+		padding: 5px 30px;
+	}
+	&__menu{
+		font-size: 16px;
+		font-family: $semibold;
+
+		li{
+			position: relative;
+
+			&:before{
+				content: "";
+				display: block;
+				width: 10px;
+				height: 6px;
+				position: absolute;
+				z-index: 2;
+				right: 0;
+				top: 50%;
+				margin-top: -3px;
+				background: url(../images/arrow-down.png)no-repeat;
+			}
+
+			&:after{
+				content: "";
+				display: block;
+				position: absolute;
+				z-index: 2;
+				bottom: 0;
+				width: 170px;
+				height: 1px;
+				left: 50%;
+				margin-left: -85px;
+				background: #f2f2f2;
+			}
+			&:last-child{
+				&:after{
+					content: none;
+				}
+			}
+		}
+		&__icon{
+			position: relative;
+			top: 2px;
+			width: 40px;
+		}
+		a{
+			display: block;
+			padding: 9px 0;
+			color: $main;
+		}
+		
+	}
+}
+.left-menu{
+	margin-top: -12px;
+	margin-bottom: -12px;
+
+	li{
+		border-bottom: 1px solid #e6e6e6;
+
+		&:last-child{
+			border-bottom: 0;
+
+			a{
+				color: $red;
+			}
+		}
+	}
+	a{
+		color: $main;
+		display: block;
+		padding: 12px 5px;
+
+		&:hover{
+			color: $red;
+		}
+	}
+}
+.section-active{
+	
+	a{
+		color: $red
+	}
+}

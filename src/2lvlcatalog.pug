@@ -1,0 +1,103 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.wrapper
+		include pug/header
+		.content
+			.payment
+			.get-call
+			.container
+				include pug/breadcrumb
+			.catalog-2lvl.hidden-md
+				.container
+					ul.row.no-gutters
+						li
+							a(href="#").row.no-gutters.align-items-center 
+								div Сухой корм
+						li
+							a(href="#").row.no-gutters.align-items-center 
+								div Консервы
+						li
+							a(href="#").row.no-gutters.align-items-center 
+								div Витамины Лакомства
+						li
+							a(href="#").row.no-gutters.align-items-center 
+								div Шампуни Кондиционеры
+						li
+							a(href="#").row.no-gutters.align-items-center 
+								div Наполнители
+						li
+							a(href="#").row.no-gutters.align-items-center 
+								div Ветеринарная аптека
+						li
+							a(href="#").row.no-gutters.align-items-center 
+								div Гигена
+						li
+							a(href="#").row.no-gutters.align-items-center 
+								div Когтеточки Домики
+			.container
+				.row.no-gutters.justify-content-between
+					.sidebar
+						.filter-item
+							.filter-content.section-active
+								a(href="#")
+									span.middle.sidebar__menu__icon
+										img(src="images/cat-yellow.png", alt="")
+									span.middle Товары для кошек
+						.filter-item
+							.filter-title 
+								| Разделы
+								i.fa.fa-angle-down.visible-xs
+							.filter-content
+								ul.left-menu
+									li
+										a(href="#") Пункт 1
+									li
+										a(href="#") Пункт 2
+									li
+										a(href="#") Пункт 3
+									li
+										a(href="#") Все разделы
+						.filter-item
+							.filter-title 
+								| Бренды
+								i.fa.fa-angle-down.visible-xs
+							.filter-content
+								ul.left-menu
+									li
+										a(href="#") Пункт 1
+									li
+										a(href="#") Пункт 2
+									li
+										a(href="#") Пункт 3
+									li
+										a(href="#") Все разделы		
+					.center-content
+						.slider-small.hidden-md
+							.slider-prev.slider-prev--main.slider-prev--inner
+								i.fa.fa-angle-left
+							.slider-next.slider-next--main.slider-next--inner
+								i.fa.fa-angle-right
+							.slider
+								div
+									.slider__item.slider__item--small(style="background-image: url(images/banner2.jpg)")
+								div
+									.slider__item.slider__item--small(style="background-image: url(images/banner2.jpg)")
+						.product-catalog.row
+							.col-lg-3.col-sm-6
+								include pug/product-catalog-item
+							.col-lg-3.col-sm-6
+								include pug/product-catalog-item
+							.col-lg-3.col-sm-6
+								include pug/product-catalog-item
+							.col-lg-3.col-sm-6
+								include pug/product-catalog-item
+							.col-lg-3.col-sm-6
+								include pug/product-catalog-item
+							.col-lg-3.col-sm-6
+								include pug/product-catalog-item
+			include pug/seo
+	include pug/footer.pug

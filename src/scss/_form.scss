@@ -1,0 +1,136 @@
+.checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px;
+}
+.checkbox + label {
+  position: relative;
+  padding: 0 0 0 25px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: $semibold;
+
+  span{
+    font-family: $lato;
+  }
+}
+.checkbox + label:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  border: 1px solid #999a9d;
+}
+.checkbox:checked + label:before {
+  background: $main;
+}
+.checkbox--yellow + label{
+  padding-left: 30px;
+}
+.checkbox--yellow + label:before{
+  width: 17px;
+  height: 17px;
+  top: -4px;
+  border-radius: 0;
+}
+.checkbox--yellow:checked + label:before{
+  background: url(../images/check-active.png)no-repeat;
+  border-color: transparent;
+}
+.checkbox--yellow:checked + label{
+  color: $red;
+}
+.checkbox-item + .checkbox-item{
+  margin-top: 15px;
+}
+.sliderValue{
+  display: block;
+  width: 85px;
+  background: #fff;
+  height: 30px;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  outline: 0;
+  font-family: $lato;
+  font-size: 14px;
+}
+.range-input{
+  margin-bottom: 35px;
+}
+.range-delimiter{
+  width: 12px;
+  height: 1px;
+  background: #e3e3e3;
+}
+.select-item{
+  margin-left: 15px;
+  display: inline-block;
+  width: 180px;
+  height: 24px;
+  outline: 0;
+  border: 1px solid #8b8d90;
+  font-size: 15px;
+  color: $main;
+  font-family: $lato;
+  padding-left: 15px;
+  -webkit-appearance: none;
+  line-height: 1em;
+  -moz-appearance: none;
+  text-indent: 0.01px; 
+  text-overflow: '';
+  -ms-appearance: none;
+  appearance: none!important;
+  background: url(../images/select-arrow.png)no-repeat right;
+
+  &--modal{
+    width: 225px;
+    margin-left: 0;
+    background: url(../images/select-arrow-grey.png)no-repeat right;
+    border-color: #98999c;
+  }
+}
+.form-control{
+  display: block;
+  width: 100%;
+  height: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: $lato;
+  border: 1px solid #98999c;
+  outline: 0;
+
+  &--modal{
+    width: calc(100% - 120px);
+  }
+  &--register{
+    width: calc(100% - 150px);
+  }
+}
+.form-label{
+  font-size: 14px;
+  font-family: $medium;
+  width: 115px;
+}
+.red-star{
+  color: #ff0000;
+}
+.form-group{
+  margin-bottom: 20px;
+
+  &--submit{
+    text-align: center;
+  }
+  &--register{
+    margin-bottom: 30px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}

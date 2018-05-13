@@ -1,6 +1,6 @@
 b,
 strong{
-	font-weight: 700;
+	font-family: $bold;
 }
 i{
 	font-style: italic;
@@ -11,6 +11,18 @@ i{
 	p{
 		margin-top: 20px;
 	}
+}
+.about{
+	p{
+		&:first-child{
+			margin-top: 0;
+		}
+		
+	}
+}
+.top{
+	display: inline-block;
+	vertical-align: top;
 }
 h2{
 	font-size: 28px;
@@ -76,4 +88,12 @@ h4{
 .clock-title{
 	margin-bottom: 10px;
 	font-family: $medium;
+}
+.seo-text{
+	margin-top: 55px;
+	
+	&__content{
+		padding-top: 30px;
+		border-top: 1px solid #e1e1e1;
+	}
 }
