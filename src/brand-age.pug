@@ -1,0 +1,155 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.wrapper
+		include pug/header
+		.content
+			.payment
+			.get-call
+			.container
+				include pug/breadcrumb
+			.brand-header
+				.container
+					.brand-big-img
+						img(src="images/royal-big.png", alt="")
+					.brand-header__text
+						| Purina® Pro Plan® заботится о правильном питании ваших питомцев на протяжении всей жизни. Компания Purina® доверяют ветеринарные специалисты по всему миру.
+					.row
+						.col-sm-6
+							a(href="#").btn.btn-dark.btn-brand-left Сухой корм
+						.col-sm-6
+							a(href="#").btn.btn-dark.btn-brand-right Влажный корм
+			.brand-select
+				.container
+					.brand-select--border
+						h4.brand-title
+							| ПОДБОРКА КОРМА 
+							b ПО ВОЗРАСТУ КОШКИ
+						.row
+							.col-lg-4
+								a(href="#")
+									.brand-select__item
+										.brand-select__img
+											img(src="images/s-cat1.png", alt="")
+										.brand-select__info
+											.brand-select__name Для котят
+							.col-lg-4
+								a(href="#")
+									.brand-select__item
+										.brand-select__img
+											img(src="images/s-cat2.png", alt="")
+										.brand-select__info
+											.brand-select__name для взрослых кошек
+							.col-lg-4
+								a(href="#")
+									.brand-select__item
+										.brand-select__img
+											img(src="images/s-cat3.png", alt="")
+										.brand-select__info
+											.brand-select__name для кошек старше 7 лет
+			.brand-select
+				.container
+					h4.brand-title
+						| ПОДБОРКА КОРМА 
+						b ПО ОСОБЕННОСТЯМ ЗДОРОВЬЯ
+				.catalog-2lvl.catalog-2lvl--brand.hidden-md
+					.container
+						ul.row.no-gutters
+							li
+								a(href="#").row.no-gutters.align-items-center 
+									div Все
+							li
+								a(href="#").row.no-gutters.align-items-center 
+									div Для стериализованных кошек
+							li
+								a(href="#").row.no-gutters.align-items-center 
+									div Для кошек с чувствительным пищеварением
+							li
+								a(href="#").row.no-gutters.align-items-center 
+									div Для кошек с избыточным весом
+							li
+								a(href="#").row.no-gutters.align-items-center 
+									div Для кошек с чувствительной кожей
+							li
+								a(href="#").row.no-gutters.align-items-center 
+									div Для кошек живущих дома
+				.container
+					.view-block 293 товара
+					.catalog-filter.row.no-gutters.align-items-center.justify-content-between
+						.catalog-filter__view
+							span.middle Показать по:  
+							a(href="#").middle 24  
+							span.middle /  
+							a(href="#").middle.active 48  
+							span.middle /  
+							a(href="#").middle 62
+						.pagination
+							a(href="#").pagination__btn
+							ul.pagination__pages
+								li
+									a(href="#") 1
+								li
+									a(href="#").current 2
+								li
+									a(href="#") 3
+								li
+									a(href="#") 4
+								li ...
+								li
+									a(href="#") 15
+							a(href="#").pagination__btn.pagination__btn--next
+						.catalog-select
+							span.middle Выводить:
+							select.select-item
+								option значение 1
+								option значение 2
+					.row.products-list.products-list--brand
+						.col-xl-3.col-lg-4.col-sm-6
+							include pug/product-item
+						.col-xl-3.col-lg-4.col-sm-6
+							include pug/product-item
+						.col-xl-3.col-lg-4.col-sm-6
+							include pug/product-item
+						.col-xl-3.col-lg-4.col-sm-6
+							include pug/product-item
+						.col-xl-3.col-lg-4.col-sm-6
+							include pug/product-item
+						.col-xl-3.col-lg-4.col-sm-6
+							include pug/product-item
+						.col-xl-3.col-lg-4.col-sm-6
+							include pug/product-item
+						.col-xl-3.col-lg-4.col-sm-6
+							include pug/product-item
+					.view-block 293 товара
+					.catalog-filter.catalog-filter--bottom.row.no-gutters.align-items-center.justify-content-between
+						.catalog-filter__view
+							span.middle Показать по:  
+							a(href="#").middle 24  
+							span.middle /  
+							a(href="#").middle.active 48  
+							span.middle /  
+							a(href="#").middle 62
+						.pagination
+							a(href="#").pagination__btn
+							ul.pagination__pages
+								li
+									a(href="#") 1
+								li
+									a(href="#").current 2
+								li
+									a(href="#") 3
+								li
+									a(href="#") 4
+								li ...
+								li
+									a(href="#") 15
+							a(href="#").pagination__btn.pagination__btn--next
+						.catalog-select
+							span.middle Выводить:
+							select.select-item
+								option значение 1
+								option значение 2
+	include pug/footer.pug

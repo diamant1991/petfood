@@ -1,0 +1,171 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.wrapper
+		include pug/header
+		.content
+			.payment
+			.get-call
+			.container
+				include pug/breadcrumb
+				.catalog-2lvl.hidden-md
+					.container
+						ul.row.no-gutters
+							li
+								a(href="#").row.no-gutters.align-items-center 
+									div Сухой корм
+							li
+								a(href="#").row.no-gutters.align-items-center 
+									div Консервы
+							li
+								a(href="#").row.no-gutters.align-items-center 
+									div Витамины Лакомства
+							li
+								a(href="#").row.no-gutters.align-items-center 
+									div Шампуни Кондиционеры
+							li
+								a(href="#").row.no-gutters.align-items-center 
+									div Наполнители
+							li
+								a(href="#").row.no-gutters.align-items-center 
+									div Ветеринарная аптека
+							li
+								a(href="#").row.no-gutters.align-items-center 
+									div Гигена
+							li
+								a(href="#").row.no-gutters.align-items-center 
+									div Когтеточки Домики
+			.container
+				.row.no-gutters.justify-content-between
+					.sidebar
+						.filter-item
+							.brand-logo
+								img(src="images/Purina_Pro_Plan.png", alt="")
+						.filter-item
+							.filter-content.section-active
+								a(href="#")
+									span.middle.sidebar__menu__icon
+										img(src="images/cat-yellow.png", alt="")
+									span.middle Товары для кошек
+								.filter-choice
+									.filter-choice__item
+										.table-cell.filter-choice__icon
+											img(src="images/caret.png", alt="")
+										.table-cell
+											| Бренд: Мясная лавка
+									.filter-choice__item
+										.table-cell.filter-choice__icon
+											img(src="images/caret.png", alt="")
+										.table-cell
+											| Бренд: Мясная лавка
+									.filter-choice__item
+										.table-cell.filter-choice__icon
+											img(src="images/caret.png", alt="")
+										.table-cell
+											| Бренд: Мясная лавка
+						.filter-item
+							.filter-title 
+								| Возраст
+								i.fa.fa-angle-down.visible-xs
+							.filter-content
+								.checkbox-item
+									input(type="checkbox")#check.checkbox
+									label(for="check") 
+										| Взрослые (1-6лет) 
+										span (12)
+								.checkbox-item
+									input(type="checkbox")#check2.checkbox
+									label(for="check2") 
+										| Взрослые (1-6лет) 
+										span (12)
+								.checkbox-item
+									input(type="checkbox")#check3.checkbox
+									label(for="check3") 
+										| Взрослые (1-6лет) 
+										span (12)
+						.filter-item
+							.filter-title 
+								| Возраст
+								i.fa.fa-angle-down.visible-xs
+							.filter-content
+								.checkbox-item
+									input(type="checkbox")#check4.checkbox
+									label(for="check4") 
+										| Взрослые (1-6лет) 
+										span (12)
+								.checkbox-item
+									input(type="checkbox")#check5.checkbox
+									label(for="check5") 
+										| Взрослые (1-6лет) 
+										span (12)
+								.checkbox-item
+									input(type="checkbox")#check6.checkbox
+									label(for="check6") 
+										| Взрослые (1-6лет) 
+										span (12)
+						.filter-item
+							.filter-title 
+								| Цена
+								i.fa.fa-angle-down.visible-xs
+							.filter-content
+								.range-input.row.no-gutters.align-items-center.justify-content-between
+									input(type="text").sliderValue.sliderValue_left
+									span.range-delimiter.middle
+									input(type="text").sliderValue.sliderValue_right
+								#slider-range
+					.center-content.center-content--middle
+						.text-block.text-block--brand
+							p Royal Canin - лидер на рынке производства рационов для собак и кошек, благодаря каждодневной исследовательской работе находится в авангарде разработок в области питания для домашних животных.
+							p Постоянные инновации ROYAL CANIN формируют на рынке питания для собак и кошек тенденцию производства высокоценных продуктов, состав которых способствует сохранению здоровья животного и увеличению продолжительности жизни.
+							p Компания Royal Canin (Роял Канин) - мировой гигант и признанный лидер в производстве элитных систем питания для кошек и собак. Она была основана во Франции в 1967 году ветеринарным врачом Жаном Катари, который разнообразил рацион собак, имевших различные заболевания, крупами и овощами, благодаря чему они быстро пошли на поправку. Было установлено, что именно сбалансированное питание, в котором содержатся оптимальные пропорции питательных веществ: белков, жиров и углеводов, а также витамины и минералы - залог богатырского здоровья наших четвероногих друзей. 
+						.catalog-filter.row.no-gutters.align-items-center.justify-content-between
+							.view-block 293 товара
+							.catalog-select
+								span.middle Выводить:
+								select.select-item
+									option значение 1
+									option значение 2
+							.catalog-filter__view
+								span.middle Показать по:  
+								a(href="#").middle 24  
+								span.middle /  
+								a(href="#").middle.active 48  
+								span.middle /  
+								a(href="#").middle 62
+						.row.products-list
+							.col-xl-3.col-lg-4.col-sm-6
+								include pug/product-item
+							.col-xl-3.col-lg-4.col-sm-6
+								include pug/product-item
+							.col-xl-3.col-lg-4.col-sm-6
+								include pug/product-item
+							.col-xl-3.col-lg-4.col-sm-6
+								include pug/product-item
+							.col-xl-3.col-lg-4.col-sm-6
+								include pug/product-item
+							.col-xl-3.col-lg-4.col-sm-6
+								include pug/product-item
+							.col-xl-3.col-lg-4.col-sm-6
+								include pug/product-item
+							.col-xl-3.col-lg-4.col-sm-6
+								include pug/product-item
+						.pagination.pagination--bottom
+							a(href="#").pagination__btn
+							ul.pagination__pages
+								li
+									a(href="#") 1
+								li
+									a(href="#").current 2
+								li
+									a(href="#") 3
+								li
+									a(href="#") 4
+								li ...
+								li
+									a(href="#") 15
+							a(href="#").pagination__btn.pagination__btn--next
+			include pug/seo
+	include pug/footer.pug

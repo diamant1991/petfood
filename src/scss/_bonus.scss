@@ -1,0 +1,36 @@
+.bonus-title{
+	text-align: center;
+	opacity: 0.5;
+	font-size: 14px;
+	font-family: 'Lato-Bold';
+}
+.bonus-info{
+	text-align: center;
+	font-size: 18px;
+	font-family: 'Lato-Bold';
+	margin-bottom: 25px;
+}
+.bonus-info h3{
+	color: #fe900f;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: 'Lato-Black';
+	margin-bottom: 15px;
+}
+.bonus-info__item{
+	padding-bottom: 25px;
+	-webkit-box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.04);
+	-moz-box-shadow:    0px 3px 1px 0px rgba(0, 0, 0, 0.04);
+	box-shadow:         0px 3px 1px 0px rgba(0, 0, 0, 0.04);
+}
+.bonus-info:before{
+	content: "";
+	display: block;
+	width: 1042px;
+	height: 274px;
+	background: url(../images/pets.png)no-repeat;
+	margin: auto;
+	position: relative;
+	top: 40px;
+	z-index: 2;
+}

@@ -30,6 +30,19 @@
 		}
 	}
 }
+.catalog-2lvl--brand{
+	ul{
+		li{
+			padding-left: 5px;
+			padding-right: 5px;
+			width: 16.6%;
+		}
+		a{
+			text-transform: none;
+		}
+	}
+	
+}
 .slider-small{
 	margin-bottom: 30px;
 }
@@ -155,4 +168,9 @@
 	+ .filter-choice__item{
 		margin-top: 15px;
 	}
+}
+.catalog-filter--bottom{
+	border-bottom: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }

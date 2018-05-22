@@ -1,0 +1,58 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.wrapper
+		include pug/header
+		.content
+			.payment
+			.get-call
+			.container
+				include pug/breadcrumb
+			.alphabet
+				.container
+					.row.no-gutters.align-items-center.justify-content-between
+						a(href="#").btn.btn-yellow.btn-alphabet Показать все бренды
+						ul.alphabet__list
+							li
+								a(href="#") #
+							li
+								a(href="#") A
+							li
+								a(href="#") B
+							li
+								a(href="#") C
+						div &nbsp;
+			.container
+				.row
+					.col-lg-4.col-md-6
+						include pug/brand-item
+					.col-lg-4.col-md-6
+						include pug/brand-item
+					.col-lg-4.col-md-6
+						include pug/brand-item
+					.col-lg-4.col-md-6
+						include pug/brand-item
+					.col-lg-4.col-md-6
+						include pug/brand-item
+					.col-lg-4.col-md-6
+						include pug/brand-item
+				.pagination
+					a(href="#").pagination__btn
+					ul.pagination__pages
+						li
+							a(href="#") 1
+						li
+							a(href="#").current 2
+						li
+							a(href="#") 3
+						li
+							a(href="#") 4
+						li ...
+						li
+							a(href="#") 15
+					a(href="#").pagination__btn.pagination__btn--next 
+				include pug/seo
+	include pug/footer.pug

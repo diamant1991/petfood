@@ -89,3 +89,21 @@
 	font-size: 14px;
 	font-family: $semibold;
 }
+.btn-brand-left{
+	width: 100%;
+	text-align: right;
+	padding-right: 95px;
+}
+.btn-brand-right{
+	padding-left: 95px;
+	width: 100%;
+	text-align: left;
+}
+.btn-alphabet{
+	border-radius: 0;
+	height: 50px;
+	line-height: 50px;
+	text-transform: uppercase;
+	font-family: $lato;
+	font-size: 13px;
+}

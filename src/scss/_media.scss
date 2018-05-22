@@ -46,6 +46,12 @@
 	.phone{
 		font-size: 16px;
 	}
+	.bonus-info:before{
+		content: none;
+	}
+	.bonus-info__item{
+		box-shadow: none;
+	}
 	.payment{
 		display: none;
 	}
@@ -83,6 +89,9 @@
 	.link-btn{
 		margin-top: 20px;
 	}
+	.brand-select__name{
+		font-size: 18px;
+	}
 }
 
 @media(min-width: 992px){
@@ -93,6 +102,17 @@
 @media(max-width: 991px){
 	.hidden-md{
 		display: none;
+	}
+	.btn-brand-right{
+		text-align: center;
+		padding-left: 0;
+	}
+	.btn-brand-left{
+		padding-right: 0;
+		text-align: center;
+	}
+	.brand-select__item{
+		margin: 10px 0;
 	}
 	.header{
 		border-bottom: 1px solid #e1e1e3;
@@ -201,6 +221,12 @@
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+	.bonus-info h3{
+		font-size: 20px;
+	}
+	.bonus-info{
+		font-size: 16px;
+	}
 	.filter-content{
 		display: none;
 	}
@@ -246,6 +272,31 @@
 			margin: auto;
 			display: block;
 		}
+	}
+	.brand-item{
+		padding: 15px;
+	}
+	.brand-title{
+		font-size: 18px;
+	}
+	.brand-item__header{
+		> div{
+			width: 100%;
+
+			+ div{
+				margin: 15px 0;
+			}
+		}
+	}
+	.brand-select{
+		margin-top: 20px;
+		padding-top: 20px;
+	}
+	.brand-header__text{
+		font-size: 16px;
+	}
+	.btn-brand-right{
+		margin-top: 15px;
 	}
 	.modal-footer,
 	.modal-services{

@@ -1,0 +1,51 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.wrapper
+		include pug/header
+		.content
+			.payment
+			.get-call
+			.container
+				include pug/breadcrumb
+			.brand-header
+				.container
+					.brand-big-img
+						img(src="images/royal-big.png", alt="")
+					.brand-header__text
+						| Purina® Pro Plan® заботится о правильном питании ваших питомцев на протяжении всей жизни. Компания Purina® доверяют ветеринарные специалисты по всему миру.
+			.brand-select
+				.container
+					.brand-select--border
+						h4.brand-title
+							| ВЫБЕРИТЕ КОРМ, КОТОРЫЙ ПОДОЙДЕТ ВАШЕМУ ПИТОМЦУ
+						.row
+							.col-lg-4
+								a(href="#")
+									.brand-select__item
+										.brand-select__img.brand-select__img--big
+											img(src="images/for-dog.png", alt="")
+										.brand-select__info
+											.brand-select__name Для собак
+											.brand-select__text Лучшие корма для питомца
+							.col-lg-4
+								a(href="#")
+									.brand-select__item
+										.brand-select__img.brand-select__img--big
+											img(src="images/for-cat.png", alt="")
+										.brand-select__info
+											.brand-select__name Для кошек
+											.brand-select__text Лучшие корма для питомца
+							.col-lg-4
+								a(href="#")
+									.brand-select__item
+										.brand-select__img.brand-select__img--big
+											img(src="images/for -bird.png", alt="")
+										.brand-select__info
+											.brand-select__name Для птиц
+											.brand-select__text Лучшие корма для питомца
+			include pug/seo
+	include pug/footer.pug
