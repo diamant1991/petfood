@@ -11,6 +11,26 @@ i{
 	p{
 		margin-top: 20px;
 	}
+	ul{
+		margin-bottom: 20px;
+
+		li{
+			position: relative;
+			padding-left: 15px;
+
+			&:before{
+				content: "";
+				position: absolute;
+				z-index: 2;
+				width: 3px;
+				height: 3px;
+				border-radius: 50%;
+				background: $main;
+				top: 10px;
+				left: 0;
+			}
+		}
+	}
 }
 .about{
 	p{

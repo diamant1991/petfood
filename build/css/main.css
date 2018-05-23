@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: 'Lato-Semibold';
-  src: url("../fonts/Lato-Semibold/Lato-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Semibold/Lato-Semibold.woff") format("woff"), url("../fonts/Lato-Semibold/Lato-Semibold.ttf") format("truetype"), url("../fonts/Lato-Semibold/Lato-Semibold.svg#Lato-Semibold") format("svg");
+  src: url("../fonts/Lato-SemiBold/Lato-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-SemiBold/Lato-Semibold.woff") format("woff"), url("../fonts/Lato-SemiBold/Lato-Semibold.ttf") format("truetype"), url("../fonts/Lato-SemiBold/Lato-Semibold.svg#Lato-Semibold") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -42,8 +42,8 @@
 
 @font-face {
   font-family: 'MyriadProSemibold';
-  src: url("../fonts/MyriadProSemibold/MyriadProSemibold.eot");
-  src: url("../fonts/MyriadProSemibold/MyriadProSemibold.eot") format("embedded-opentype"), url("../fonts/MyriadProSemibold/MyriadProSemibold.woff2") format("woff2"), url("../fonts/MyriadProSemibold/MyriadProSemibold.woff") format("woff"), url("../fonts/MyriadProSemibold/MyriadProSemibold.ttf") format("truetype"), url("../fonts/MyriadProSemibold/MyriadProSemibold.svg#MyriadProSemibold") format("svg"); }
+  src: url("../fonts/MyriadProSemiBold/MyriadProSemibold.eot");
+  src: url("../fonts/MyriadProSemiBold/MyriadProSemibold.eot") format("embedded-opentype"), url("../fonts/MyriadProSemiBold/MyriadProSemibold.woff2") format("woff2"), url("../fonts/MyriadProSemiBold/MyriadProSemibold.woff") format("woff"), url("../fonts/MyriadProSemiBold/MyriadProSemibold.ttf") format("truetype"), url("../fonts/MyriadProSemiBold/MyriadProSemibold.svg#MyriadProSemibold") format("svg"); }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -5987,6 +5987,23 @@ i {
   line-height: 1.3; }
   .text-block p {
     margin-top: 20px; }
+  .text-block ul {
+    margin-bottom: 20px; }
+    .text-block ul li {
+      position: relative;
+      padding-left: 15px; }
+      .text-block ul li:before {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        width: 3px;
+        height: 3px;
+        -webkit-border-radius: 50%;
+           -moz-border-radius: 50%;
+                border-radius: 50%;
+        background: #3e4146;
+        top: 10px;
+        left: 0; }
 
 .about p:first-child {
   margin-top: 0; }
@@ -7479,6 +7496,48 @@ h4 {
   top: 40px;
   z-index: 2; }
 
+.vacancies__list {
+  margin-bottom: 45px; }
+  .vacancies__list h4 {
+    margin-bottom: 5px; }
+  .vacancies__list__item {
+    font-size: 16px;
+    line-height: 1.5; }
+    .vacancies__list__item a {
+      color: #fe900f;
+      font-family: "Lato-Bold"; }
+    .vacancies__list__item li {
+      position: relative;
+      padding-left: 10px; }
+      .vacancies__list__item li:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        background: #3e4146;
+        -webkit-border-radius: 50%;
+           -moz-border-radius: 50%;
+                border-radius: 50%;
+        left: 0;
+        top: 10px; }
+      .vacancies__list__item li + li {
+        margin-top: 5px; }
+
+.vacancies__info__item + .vacancies__info__item {
+  margin-top: 55px; }
+
+.vacancies__info h4 {
+  margin-bottom: 5px; }
+
+.vacancies__info__header {
+  margin-bottom: 35px;
+  font-size: 18px;
+  font-family: "Lato-Bold";
+  text-transform: uppercase;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #e1e1e3; }
+
 .footer-top {
   background: #3e4146;
   padding-top: 75px;
@@ -7741,6 +7800,8 @@ h4 {
     padding-right: 15px; }
   .bonus-info h3 {
     font-size: 20px; }
+  .vacancies__info__header {
+    font-size: 16px; }
   .bonus-info {
     font-size: 16px; }
   .filter-content {
