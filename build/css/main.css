@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700,900");
 @font-face {
   font-family: 'MyriadPro';
@@ -6531,6 +6532,15 @@ h4 {
   font-family: "Lato-Regular";
   font-size: 13px; }
 
+.btn-news {
+  font-size: 16px;
+  font-family: "Lato-Regular";
+  height: 40px;
+  line-height: 40px;
+  width: 180px; }
+  .btn-news + .btn {
+    margin-left: 1px; }
+
 .news {
   padding-bottom: 40px; }
   .news .item-title {
@@ -6553,6 +6563,42 @@ h4 {
 
 .banner {
   width: 280px; }
+
+.news-pag {
+  margin-bottom: 20px; }
+
+.news-page {
+  padding-top: 40px; }
+
+.news-nav {
+  margin-bottom: 20px; }
+
+.news-item {
+  padding: 30px 80px;
+  border: 1px solid #e1e1e3; }
+  .news-item__descr {
+    width: -webkit-calc(100% - 500px);
+    width: -moz-calc(100% - 500px);
+    width: calc(100% - 500px); }
+    .news-item__descr h4 {
+      text-transform: uppercase;
+      color: #fe900f;
+      margin-bottom: 0; }
+    .news-item__descr p {
+      margin-bottom: 35px; }
+    .news-item__descr a {
+      color: #fe900f;
+      font-family: "Lato-Bold"; }
+  .news-item__date {
+    font-size: 14px; }
+  .news-item__img {
+    width: 180px;
+    height: 100px;
+    -moz-background-size: cover;
+         background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border: 1px solid #f2f2f2; }
 
 .breadcrumb {
   font-size: 14px;
@@ -6644,6 +6690,10 @@ h4 {
   width: -moz-calc(100% - 300px);
   width: calc(100% - 300px); }
 
+.table-top {
+  display: table-cell;
+  vertical-align: top; }
+
 .catalog-2lvl {
   background: #f8f8f8;
   margin-bottom: 45px; }
@@ -6688,6 +6738,8 @@ h4 {
   text-align: center; }
   .pagination--bottom {
     margin-top: 35px; }
+  .pagination--right {
+    text-align: right; }
   .pagination__btn {
     display: inline-block;
     vertical-align: middle;
@@ -6793,6 +6845,17 @@ h4 {
   border-bottom: 0;
   margin-bottom: 0;
   padding-bottom: 0; }
+
+.catalog-news {
+  margin-bottom: 0; }
+  .catalog-news ul
+li {
+    width: auto;
+    display: inline-block;
+    vertical-align: top; }
+  .catalog-news a {
+    padding-left: 35px;
+    padding-right: 35px; }
 
 .card {
   margin-bottom: 40px;
@@ -7423,6 +7486,11 @@ h4 {
     .form-group--register:last-child {
       margin-bottom: 0; }
 
+.select-full {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 20px; }
+
 .register__info {
   max-width: 575px;
   padding: 20px 30px;
@@ -7537,6 +7605,43 @@ h4 {
   text-transform: uppercase;
   padding-bottom: 7px;
   border-bottom: 1px solid #e1e1e3; }
+
+.info-content {
+  max-width: 875px; }
+  .info-content__icon {
+    width: 140px; }
+  .info-content h4 {
+    color: #3e4146;
+    margin-bottom: 5px; }
+  .info-content p {
+    margin-top: 5px;
+    margin-bottom: 15px; }
+  .info-content ol {
+    margin-bottom: 15px; }
+    .info-content ol li:before {
+      content: "— "; }
+  .info-content__block {
+    padding: 10px 25px;
+    background: #e2ebf1;
+    margin-bottom: 10px; }
+
+.delivery + .delivery {
+  margin-top: 50px; }
+
+.delivery__header {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-family: "Lato-Bold";
+  color: #3e4146;
+  border-bottom: 1px solid #e1e1e3;
+  margin-bottom: 40px; }
+
+.info-content__payment li + li {
+  margin-top: 30px; }
+
+.delivery__header--payment {
+  color: #fe900f; }
 
 .footer-top {
   background: #3e4146;
@@ -7721,6 +7826,12 @@ h4 {
   .btn-brand-left {
     padding-right: 0;
     text-align: center; }
+  .news-item {
+    padding: 20px; }
+  .news-item__date {
+    width: 100px; }
+  .news-item__descr {
+    width: 300px; }
   .brand-select__item {
     margin: 10px 0; }
   .header {
@@ -7802,6 +7913,19 @@ h4 {
     font-size: 20px; }
   .vacancies__info__header {
     font-size: 16px; }
+  .news-item__descr {
+    width: 100%;
+    margin: 15px 0; }
+    .news-item__descr p {
+      margin-bottom: 5px; }
+  .delivery__header {
+    margin-bottom: 20px; }
+  .info-content__icon {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px; }
+  .news-item__date {
+    width: 100%; }
   .bonus-info {
     font-size: 16px; }
   .filter-content {

@@ -4,6 +4,10 @@
 .center-content--middle{
 	width: calc(100% - 300px);
 }
+.table-top{
+	display: table-cell;
+	vertical-align: top;
+}
 .catalog-2lvl{
 	background: #f8f8f8;
 	margin-bottom: 45px;
@@ -64,6 +68,9 @@
 
 	&--bottom{
 		margin-top: 35px;
+	}
+	&--right{
+		text-align: right;
 	}
 	&__btn{
 		display: inline-block;
@@ -173,4 +180,18 @@
 	border-bottom: 0;
 	margin-bottom: 0;
 	padding-bottom: 0;
+}
+.catalog-news{
+	margin-bottom: 0;
+
+	ul
+		li{
+			width: auto;
+			display: inline-block;
+			vertical-align: top;
+		}
+		a{
+			padding-left: 35px;
+			padding-right: 35px;
+		}
 }

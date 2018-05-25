@@ -24,3 +24,45 @@
 .banner{
 	width: 280px;
 }
+.news-pag{
+	margin-bottom: 20px;
+}
+.news-page{
+	padding-top: 40px;
+}
+.news-nav{
+	margin-bottom: 20px;
+}
+.news-item{
+	padding: 30px 80px;
+	border: 1px solid #e1e1e3;
+
+	&__descr{
+		width: calc(100% - 500px);
+		
+		h4{
+			text-transform: uppercase;
+			color: $red;
+			margin-bottom: 0;
+		}
+		p{
+			margin-bottom: 35px;
+		}
+		a{
+			color: $red;
+			font-family: $bold;
+		}
+	}
+	&__date{
+		font-size: 14px;
+	}
+
+	&__img{
+		width: 180px;
+		height: 100px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50%;
+		border: 1px solid #f2f2f2;
+	}
+}

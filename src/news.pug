@@ -1,0 +1,100 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.wrapper
+		include pug/header
+		.content
+			.payment
+			.get-call
+			.container
+				include pug/breadcrumb
+				.news-page
+					select.select-item.select-full.visible-md
+						option Все новости
+						option Акции
+						option Новинки
+						option Конкурсы
+						option О компании
+					select.select-item.select-full.visible-md
+						option Для собак
+						option Для кошек
+						option для грызунов и хорьков
+						option для рыбок
+					.news-nav.hidden-md
+						a(href="#").btn.btn-dark.btn-news Все новости
+						a(href="#").btn.btn-dark.btn-news Акции
+						a(href="#").btn.btn-dark.btn-news Новинки
+						a(href="#").btn.btn-dark.btn-news Конкурсы
+						a(href="#").btn.btn-dark.btn-news О компании
+					.news-pag.row.no-gutters.align-items-center.justify-content-between.hidden-md
+						.catalog-2lvl.catalog-news.hidden-md
+							ul
+								li
+									a(href="#").row.no-gutters.align-items-center 
+										div Для собак
+								li
+									a(href="#").row.no-gutters.align-items-center 
+										div Для кошек
+								li
+									a(href="#").row.no-gutters.align-items-center 
+										div для грызунов и хорьков
+								li
+									a(href="#").row.no-gutters.align-items-center 
+										div для рыбок
+						.pagination
+								a(href="#").pagination__btn
+								ul.pagination__pages
+									li
+										a(href="#") 1
+									li
+										a(href="#").current 2
+									li
+										a(href="#") 3
+									li
+										a(href="#") 4
+									li ...
+									li
+										a(href="#") 15
+								a(href="#").pagination__btn.pagination__btn--next
+					.news-item.row.no-gutters.justify-content-between
+						.news-item__img(style="background-image: url(http://via.placeholder.com/180x100)")
+						.news-item__descr
+							h4 Майская распродажа!
+							p Скидки до 40% на все категории зоотоваров.
+							a(href="#") Подробнее →
+						.news-item__date c 28.04.2018 до 04.05.2018
+					.news-item.row.no-gutters.justify-content-between
+						.news-item__img(style="background-image: url(http://via.placeholder.com/180x100)")
+						.news-item__descr
+							h4 Майская распродажа!
+							p Скидки до 40% на все категории зоотоваров.
+							a(href="#") Подробнее →
+						.news-item__date c 28.04.2018 до 04.05.2018
+					.news-item.row.no-gutters.justify-content-between
+						.news-item__img(style="background-image: url(http://via.placeholder.com/180x100)")
+						.news-item__descr
+							h4 Майская распродажа!
+							p Скидки до 40% на все категории зоотоваров.
+							a(href="#") Подробнее →
+						.news-item__date c 28.04.2018 до 04.05.2018
+					.pagination.pagination--bottom.pagination--right
+						a(href="#").pagination__btn
+						ul.pagination__pages
+							li
+								a(href="#") 1
+							li
+								a(href="#").current 2
+							li
+								a(href="#") 3
+							li
+								a(href="#") 4
+							li ...
+							li
+								a(href="#") 15
+						a(href="#").pagination__btn.pagination__btn--next
+
+
+	include pug/footer.pug

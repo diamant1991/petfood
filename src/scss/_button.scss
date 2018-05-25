@@ -107,3 +107,14 @@
 	font-family: $lato;
 	font-size: 13px;
 }
+.btn-news{
+	font-size: 16px;
+	font-family: $lato;
+	height: 40px;
+	line-height: 40px;
+	width: 180px;
+
+	+ .btn{
+		margin-left: 1px;
+	}
+}

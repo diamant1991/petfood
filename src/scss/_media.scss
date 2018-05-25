@@ -111,6 +111,15 @@
 		padding-right: 0;
 		text-align: center;
 	}
+	.news-item{
+		padding: 20px;
+	}
+	.news-item__date{
+		width: 100px;
+	}
+	.news-item__descr{
+		width: 300px;
+	}
 	.brand-select__item{
 		margin: 10px 0;
 	}
@@ -226,6 +235,25 @@
 	}
 	.vacancies__info__header{
 		font-size: 16px;
+	}
+	.news-item__descr{
+		width: 100%;
+		margin: 15px 0;
+
+		p{
+			margin-bottom: 5px;
+		}
+	}
+	.delivery__header{
+		margin-bottom: 20px;
+	}
+	.info-content__icon{
+		width: 100%;
+		display: block;
+		margin-bottom: 20px;
+	}
+	.news-item__date{
+		width: 100%;
 	}
 	.bonus-info{
 		font-size: 16px;
