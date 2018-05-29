@@ -112,6 +112,9 @@
     width: calc(100% - 150px);
   }
 }
+.form-submit-btn{
+  width: calc(100% - 150px);
+}
 .form-label{
   font-size: 14px;
   font-family: $medium;
@@ -138,4 +141,10 @@
   width: 100%;
   margin: 0;
   margin-bottom: 20px;
+}
+.textarea-support{
+  resize: none;
+  height: 260px;
+  padding-top: 15px;
+  font-family: $lato;
 }

@@ -5494,6 +5494,8 @@ img {
 .search {
   position: relative;
   width: 440px; }
+  .search--result {
+    width: 550px; }
   .search__field {
     height: 35px;
     display: block;
@@ -6013,6 +6015,15 @@ i {
   display: inline-block;
   vertical-align: top; }
 
+.support__title {
+  display: inline-block;
+  font-size: 43px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e1e1e3;
+  font-family: "Lato-Semibold";
+  margin-bottom: 20px; }
+
 h2 {
   font-size: 28px;
   font-family: "Lato-Black";
@@ -6431,7 +6442,10 @@ h4 {
   display: inline-block;
   font-size: 18px;
   font-family: "Lato-Semibold";
-  color: #fff; }
+  color: #fff;
+  cursor: pointer;
+  outline: 0;
+  border: 0; }
   .btn + .btn {
     margin-left: 25px; }
   .btn-red {
@@ -6599,6 +6613,11 @@ h4 {
     background-repeat: no-repeat;
     background-position: 50%;
     border: 1px solid #f2f2f2; }
+
+.bottom-news {
+  margin-top: 35px;
+  padding-top: 55px;
+  border-top: 1px solid #e1e1e3; }
 
 .breadcrumb {
   font-size: 14px;
@@ -6856,6 +6875,10 @@ li {
   .catalog-news a {
     padding-left: 35px;
     padding-right: 35px; }
+
+.search-header {
+  padding-top: 25px;
+  padding-bottom: 40px; }
 
 .card {
   margin-bottom: 40px;
@@ -7469,6 +7492,11 @@ li {
     width: -moz-calc(100% - 150px);
     width: calc(100% - 150px); }
 
+.form-submit-btn {
+  width: -webkit-calc(100% - 150px);
+  width: -moz-calc(100% - 150px);
+  width: calc(100% - 150px); }
+
 .form-label {
   font-size: 14px;
   font-family: "Lato-Medium";
@@ -7490,6 +7518,12 @@ li {
   width: 100%;
   margin: 0;
   margin-bottom: 20px; }
+
+.textarea-support {
+  resize: none;
+  height: 260px;
+  padding-top: 15px;
+  font-family: "Lato-Regular"; }
 
 .register__info {
   max-width: 575px;
@@ -7643,6 +7677,24 @@ li {
 .delivery__header--payment {
   color: #fe900f; }
 
+.support__text {
+  font-size: 18px;
+  margin-bottom: 40px;
+  line-height: 1.5;
+  font-family: "Lato-Medium"; }
+  .support__text a {
+    font-family: "Lato-Bold";
+    color: #fe900f; }
+
+.support {
+  margin-bottom: 110px; }
+
+.support-form {
+  width: 100%; }
+
+.support-form-field {
+  max-width: 450px; }
+
 .footer-top {
   background: #3e4146;
   padding-top: 75px;
@@ -7742,6 +7794,10 @@ li {
          -o-transform: scale(0.7);
             transform: scale(0.7); } }
 
+@media (min-width: 1551px) {
+  .content {
+    min-height: 660px; } }
+
 @media (max-width: 1550px) {
   .footer:before {
     content: none; }
@@ -7820,6 +7876,10 @@ li {
 @media (max-width: 991px) {
   .hidden-md {
     display: none; }
+  .search {
+    margin-top: 20px; }
+  .support__title {
+    font-size: 36px; }
   .btn-brand-right {
     text-align: center;
     padding-left: 0; }
@@ -7905,10 +7965,14 @@ li {
 @media (max-width: 767px) {
   .hidden-xs {
     display: none; }
+  .support__title {
+    font-size: 24px; }
   .filter-title {
     font-size: 14px;
     padding-left: 15px;
     padding-right: 15px; }
+  .search {
+    width: 100%; }
   .bonus-info h3 {
     font-size: 20px; }
   .vacancies__info__header {
@@ -7958,7 +8022,12 @@ li {
   .item-title--left {
     padding-left: 0; }
   .product-name {
-    font-size: 17px; } }
+    font-size: 17px; }
+  .support__text {
+    font-size: 16px;
+    margin-bottom: 25px; }
+  .support {
+    margin-bottom: 50px; } }
 
 @media (max-width: 575px) {
   .buttons {
@@ -7967,6 +8036,18 @@ li {
       width: 280px;
       margin: auto;
       display: block; }
+  .search-header__btn {
+    width: 100%; }
+    .search-header__btn .btn {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0; }
+  .support__btn .btn {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important; }
+  .support__title {
+    font-size: 20px; }
   .brand-item {
     padding: 15px; }
   .brand-title {
@@ -8009,6 +8090,10 @@ li {
   .register__form .form-label {
     width: 100px;
     font-size: 14px; }
+  .support-form .form-label {
+    width: 100%; }
+  .support-form .form-control--register {
+    width: 100%; }
   .btn-yellow--modal {
     width: 100%;
     margin-left: 0 !important; }

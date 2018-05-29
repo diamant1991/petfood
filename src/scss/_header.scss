@@ -43,6 +43,10 @@
 	position: relative;
 	width: 440px;
 
+	&--result{
+		width: 550px;
+	}
+
 	&__field{
 		height: 35px;
 		display: block;

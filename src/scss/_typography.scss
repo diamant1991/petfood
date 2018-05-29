@@ -44,6 +44,15 @@ i{
 	display: inline-block;
 	vertical-align: top;
 }
+.support__title{
+	display: inline-block;
+	font-size: 43px;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e1e1e3;
+	font-family: $semibold;
+	margin-bottom: 20px;
+}
 h2{
 	font-size: 28px;
 	font-family: $black;

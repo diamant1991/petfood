@@ -5,6 +5,11 @@
     transform: scale(0.7);
 	}
 }
+@media(min-width: 1551px){
+	.content{
+		min-height: 660px;
+	}
+}
 @media(max-width: 1550px){
 	.footer{
 		&:before{
@@ -102,6 +107,12 @@
 @media(max-width: 991px){
 	.hidden-md{
 		display: none;
+	}
+	.search{
+		margin-top: 20px;
+	}
+	.support__title{
+		font-size: 36px;
 	}
 	.btn-brand-right{
 		text-align: center;
@@ -225,10 +236,16 @@
 	.hidden-xs{
 		display: none;
 	}
+	.support__title{
+		font-size: 24px;
+	}
 	.filter-title{
 		font-size: 14px;
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+	.search{
+		width: 100%;
 	}
 	.bonus-info h3{
 		font-size: 20px;
@@ -293,6 +310,13 @@
 	.product-name{
 		font-size: 17px;
 	}
+	.support__text{
+		font-size: 16px;
+		margin-bottom: 25px;
+	}
+	.support{
+		margin-bottom: 50px;
+	}
 }
 @media(max-width: 575px){
 	.buttons{
@@ -303,6 +327,25 @@
 			margin: auto;
 			display: block;
 		}
+	}
+	.search-header__btn{
+		width: 100%;
+		
+		.btn{
+			width: 100%;
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+	.support__btn{
+		.btn{
+			width: 100%;
+			margin-left: 0 !important;
+			margin-right: 0 !important;
+		}
+	}
+	.support__title{
+		font-size: 20px;
 	}
 	.brand-item{
 		padding: 15px;
@@ -363,6 +406,12 @@
 	.register__form .form-label{
 		width: 100px;
 		font-size: 14px;
+	}
+	.support-form .form-label{
+		width: 100%;
+	}
+	.support-form .form-control--register{
+		width: 100%;
 	}
 	.btn-yellow--modal{
 		width: 100%;

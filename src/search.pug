@@ -1,0 +1,187 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.wrapper
+		include pug/header
+		.content
+			.payment
+			.get-call
+			.container
+				include pug/breadcrumb
+			.container
+				.search-header.row.no-gutters.align-items-center.justify-content-between
+					.search-header__btn
+						a(href="#").btn.btn-red Новинки
+						a(href="#").btn.btn-dark Не забудь купить
+					.search.search--result
+						input(type="text" placeholder="Корм Royal Canin").search__field
+						button(type="submit").search__btn
+				.product-carousel-block
+					.slider-prev.slider-prev--product.slider-prev--carousel
+						i.fa.fa-angle-left
+					.slider-next.slider-next--product.slider-next--carousel
+						i.fa.fa-angle-right
+					.product-carousel
+						div
+							include pug/product-item
+						div
+							include pug/product-item
+						div
+							include pug/product-item
+						div
+							include pug/product-item
+						div
+							include pug/product-item
+				.row.no-gutters.justify-content-between
+					.sidebar
+						.filter-item
+							.filter-content.section-active
+								a(href="#")
+									span.middle Каталог
+								.filter-choice
+									.filter-choice__item
+										.table-cell.filter-choice__icon
+											img(src="images/caret.png", alt="")
+										.table-cell
+											| Бренд: Мясная лавка
+									.filter-choice__item
+										.table-cell.filter-choice__icon
+											img(src="images/caret.png", alt="")
+										.table-cell
+											| Бренд: Мясная лавка
+									.filter-choice__item
+										.table-cell.filter-choice__icon
+											img(src="images/caret.png", alt="")
+										.table-cell
+											| Бренд: Мясная лавка
+						.filter-item
+							.filter-title 
+								| Возраст
+								i.fa.fa-angle-down.visible-xs
+							.filter-content
+								.checkbox-item
+									input(type="checkbox")#check.checkbox
+									label(for="check") 
+										| Взрослые (1-6лет) 
+										span (12)
+								.checkbox-item
+									input(type="checkbox")#check2.checkbox
+									label(for="check2") 
+										| Взрослые (1-6лет) 
+										span (12)
+								.checkbox-item
+									input(type="checkbox")#check3.checkbox
+									label(for="check3") 
+										| Взрослые (1-6лет) 
+										span (12)
+						.filter-item
+							.filter-title 
+								| Возраст
+								i.fa.fa-angle-down.visible-xs
+							.filter-content
+								.checkbox-item
+									input(type="checkbox")#check4.checkbox
+									label(for="check4") 
+										| Взрослые (1-6лет) 
+										span (12)
+								.checkbox-item
+									input(type="checkbox")#check5.checkbox
+									label(for="check5") 
+										| Взрослые (1-6лет) 
+										span (12)
+								.checkbox-item
+									input(type="checkbox")#check6.checkbox
+									label(for="check6") 
+										| Взрослые (1-6лет) 
+										span (12)
+						.filter-item
+							.filter-title 
+								| Цена
+								i.fa.fa-angle-down.visible-xs
+							.filter-content
+								.range-input.row.no-gutters.align-items-center.justify-content-between
+									input(type="text").sliderValue.sliderValue_left
+									span.range-delimiter.middle
+									input(type="text").sliderValue.sliderValue_right
+								#slider-range
+					.center-content.center-content--middle
+						.view-block 293 товара
+						.catalog-filter.row.no-gutters.align-items-center.justify-content-between
+							.catalog-filter__view
+								span.middle Показать по:  
+								a(href="#").middle 24  
+								span.middle /  
+								a(href="#").middle.active 48  
+								span.middle /  
+								a(href="#").middle 62
+							.pagination
+								a(href="#").pagination__btn
+								ul.pagination__pages
+									li
+										a(href="#") 1
+									li
+										a(href="#").current 2
+									li
+										a(href="#") 3
+									li
+										a(href="#") 4
+									li ...
+									li
+										a(href="#") 15
+								a(href="#").pagination__btn.pagination__btn--next
+							.catalog-select
+								span.middle Выводить:
+								select.select-item
+									option значение 1
+									option значение 2
+						.row.products-list
+							.col-xl-3.col-lg-4.col-sm-6
+								include pug/product-item
+							.col-xl-3.col-lg-4.col-sm-6
+								include pug/product-item
+							.col-xl-3.col-lg-4.col-sm-6
+								include pug/product-item
+							.col-xl-3.col-lg-4.col-sm-6
+								include pug/product-item
+							.col-xl-3.col-lg-4.col-sm-6
+								include pug/product-item
+							.col-xl-3.col-lg-4.col-sm-6
+								include pug/product-item
+							.col-xl-3.col-lg-4.col-sm-6
+								include pug/product-item
+							.col-xl-3.col-lg-4.col-sm-6
+								include pug/product-item
+						.pagination.pagination--bottom
+							a(href="#").pagination__btn
+							ul.pagination__pages
+								li
+									a(href="#") 1
+								li
+									a(href="#").current 2
+								li
+									a(href="#") 3
+								li
+									a(href="#") 4
+								li ...
+								li
+									a(href="#") 15
+							a(href="#").pagination__btn.pagination__btn--next
+				.bottom-news
+					.news-item.row.no-gutters.justify-content-between
+						.news-item__img(style="background-image: url(http://via.placeholder.com/180x100)")
+						.news-item__descr
+							h4 Майская распродажа!
+							p Скидки до 40% на все категории зоотоваров.
+							a(href="#") Подробнее →
+						.news-item__date c 28.04.2018 до 04.05.2018
+					.news-item.row.no-gutters.justify-content-between
+						.news-item__img(style="background-image: url(http://via.placeholder.com/180x100)")
+						.news-item__descr
+							h4 Майская распродажа!
+							p Скидки до 40% на все категории зоотоваров.
+							a(href="#") Подробнее →
+						.news-item__date c 28.04.2018 до 04.05.2018
+	include pug/footer.pug

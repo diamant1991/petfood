@@ -1,0 +1,57 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.wrapper
+		include pug/header
+		.content
+			.payment
+			.get-call
+			.container
+				include pug/breadcrumb
+				.support.row
+					.col-lg-7
+						h1.support__title техническая поддержка
+						p.support__text 
+							| Что-то сломалось и не работает? Есть предложения по работе сайта? Загляните в 
+							a(href="#") FAQ. 
+							| Возможно, там уже есть ответ на ваш вопрос. Если ответа не нашли, то свяжитесь с нами, отправив запрос в данном разделе.
+						.support__btn
+							a(href="#").btn.btn-black Вопросы/ответы
+							a(href="#").btn.btn-yellow Задать вопрос
+					.col-lg-5.hidden-md
+						img(src="images/support-dog.png", alt="")
+				.register__item
+					.modal-header.register-header
+						h5 Связаться с техническими специалистами
+					.register__item__content
+						.register__form.support-form
+							.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between.support-form-field
+								.form-label
+									span E-mail
+									span.red-star *
+								input(type="text").form-control.form-control--register
+							.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between.support-form-field
+								.form-label
+									span Ваш логин
+									span.red-star *
+								input(type="text").form-control.form-control--register
+							.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between.support-form-field
+								.form-label
+									span Тема
+									span.red-star *
+								input(type="text").form-control.form-control--register
+							.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+								.form-label
+									span Опишите проблему
+									span.red-star *
+								textarea.form-control.form-control--register.textarea-support
+							.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+								.form-label &nbsp;
+								.form-submit-btn
+									button(type="submit").btn.btn-yellow Отправить
+
+
+	include pug/footer.pug

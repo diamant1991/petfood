@@ -6,6 +6,9 @@
 	font-size: 18px;
 	font-family: $semibold;
 	color: #fff;
+	cursor: pointer;
+	outline: 0;
+	border: 0;
 
 	+ .btn{
 		margin-left: 25px;
