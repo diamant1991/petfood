@@ -1,0 +1,50 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.wrapper
+		include pug/header
+		.content
+			.payment
+			.get-call
+			.container
+				include pug/breadcrumb
+				.support.row
+					.col-lg-7.category-info
+						h1.support__title энциклопедия
+						p.support__text 
+							| Узнайте новую информацию о вашем любимом питомце
+					.col-lg-5.hidden-md
+						img(src="images/pets_big.png", alt="")
+				.row
+					.col-lg-3.col-md-6
+						a(href="#")
+							.category-item
+								.category-item__name питомники
+								.category-item__img
+									img(src="images/item1.png", alt="")
+								.category-item__link Подробнее →
+					.col-lg-3.col-md-6
+						a(href="#")
+							.category-item
+								.category-item__name породы собак
+								.category-item__img
+									img(src="images/item2.png", alt="")
+								.category-item__link Подробнее →
+					.col-lg-3.col-md-6
+						a(href="#")
+							.category-item
+								.category-item__name породы кошек
+								.category-item__img
+									img(src="images/item3.png", alt="")
+								.category-item__link Подробнее →
+					.col-lg-3.col-md-6
+						a(href="#")
+							.category-item
+								.category-item__name виды рыбок
+								.category-item__img
+									img(src="images/item4.png", alt="")
+								.category-item__link Подробнее →
+	include pug/footer.pug

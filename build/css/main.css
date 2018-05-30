@@ -5990,6 +5990,8 @@ i {
   line-height: 1.3; }
   .text-block p {
     margin-top: 20px; }
+    .text-block p + ul {
+      margin-top: 20px; }
   .text-block ul {
     margin-bottom: 20px; }
     .text-block ul li {
@@ -6094,6 +6096,22 @@ h4 {
 
 .yellow-link {
   color: #fe900f; }
+
+.return h4 {
+  margin-bottom: 5px; }
+
+.return p {
+  margin-top: 0;
+  margin-bottom: 20px; }
+
+.contacts-text {
+  line-height: 1.6;
+  margin-bottom: 25px; }
+  .contacts-text h4 {
+    margin-bottom: 5px; }
+
+.abs-img {
+  position: absolute; }
 
 .services {
   padding: 30px 0;
@@ -6321,6 +6339,28 @@ h4 {
 
 .products-list--brand {
   margin-bottom: 30px; }
+
+.category-item {
+  text-align: center;
+  border: 1px solid #f2f2f2;
+  padding: 20px 15px;
+  margin: 10px 0; }
+  .category-item__name {
+    text-transform: uppercase;
+    font-family: "Lato-Semibold";
+    height: 45px;
+    overflow: hidden;
+    color: #3e4146; }
+  .category-item__img {
+    height: 180px; }
+    .category-item__img img {
+      max-height: 180px; }
+  .category-item__link {
+    color: #fe900f;
+    font-family: "Lato-Bold"; }
+
+.category-info {
+  padding-top: 60px; }
 
 .brands {
   padding-bottom: 35px; }
@@ -6879,6 +6919,9 @@ li {
 .search-header {
   padding-top: 25px;
   padding-bottom: 40px; }
+
+.contacts-map {
+  margin-top: 35px; }
 
 .card {
   margin-bottom: 40px;
@@ -7562,6 +7605,11 @@ li {
   font-size: 12px;
   cursor: pointer; }
 
+.register__item--write {
+  border: 0; }
+  .register__item--write .register__item__content {
+    padding: 0; }
+
 .bonus-title {
   text-align: center;
   opacity: 0.5;
@@ -7695,6 +7743,16 @@ li {
 .support-form-field {
   max-width: 450px; }
 
+.about-contact {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 50px; }
+  .about-contact h4 {
+    margin-bottom: 5px; }
+
+.info-content--about {
+  max-width: inherit; }
+
 .footer-top {
   background: #3e4146;
   padding-top: 75px;
@@ -7795,8 +7853,8 @@ li {
             transform: scale(0.7); } }
 
 @media (min-width: 1551px) {
-  .content {
-    min-height: 660px; } }
+  .wrapper {
+    min-height: 1000px; } }
 
 @media (max-width: 1550px) {
   .footer:before {
@@ -7886,6 +7944,8 @@ li {
   .btn-brand-left {
     padding-right: 0;
     text-align: center; }
+  .category-info {
+    padding-top: 0; }
   .news-item {
     padding: 20px; }
   .news-item__date {
@@ -8036,6 +8096,8 @@ li {
       width: 280px;
       margin: auto;
       display: block; }
+  .support {
+    margin-bottom: 20px; }
   .search-header__btn {
     width: 100%; }
     .search-header__btn .btn {

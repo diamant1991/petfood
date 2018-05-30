@@ -10,6 +10,10 @@ i{
 
 	p{
 		margin-top: 20px;
+
+		+ ul{
+			margin-top: 20px;
+		}
 	}
 	ul{
 		margin-bottom: 20px;
@@ -128,4 +132,24 @@ h4{
 }
 .yellow-link{
 	color: $red;
+}
+.return{
+	h4{
+		margin-bottom: 5px;
+	}
+	p{
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+}
+.contacts-text{
+	line-height: 1.6;
+	margin-bottom: 25px;
+
+	h4{
+		margin-bottom: 5px;
+	}
+}
+.abs-img{
+	position: absolute;
 }

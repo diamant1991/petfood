@@ -13,21 +13,19 @@ block content
 				include pug/breadcrumb
 				.support.row
 					.col-lg-7
-						h1.support__title техническая поддержка
+						h1.support__title ПИСЬМО ДИРЕКТОРУ
 						p.support__text 
-							| Что-то сломалось и не работает? Есть предложения по работе сайта? Загляните в 
-							a(href="#") FAQ. 
-							| Возможно, там уже есть ответ на ваш вопрос. Если ответа не нашли, то свяжитесь с нами, отправив запрос в данном разделе.
-						.support__btn
-							a(href="#").btn.btn-black Вопросы/ответы
-							a(href="#").btn.btn-yellow Задать вопрос
+							| Уважаемый клиент, Вы можете отправить Ваше пожелание или жалобу напрямую Директору Petshop.ru. Для нас очень важно услышать Ваше мнение о нашей работе. Спасибо!
 					.col-lg-5.hidden-md
-						img(src="images/support-dog.png", alt="")
-				.register__item
-					.modal-header.register-header
-						h5 Связаться с техническими специалистами
+						img(src="images/dog-write.png", alt="").abs-img
+				.register__item.register__item--write
 					.register__item__content
 						.register__form.support-form
+							.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between.support-form-field
+								.form-label
+									span Имя
+									span.red-star *
+								input(type="text").form-control.form-control--register
 							.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between.support-form-field
 								.form-label
 									span E-mail
@@ -35,18 +33,12 @@ block content
 								input(type="text").form-control.form-control--register
 							.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between.support-form-field
 								.form-label
-									span Ваш логин
-									span.red-star *
-								input(type="text").form-control.form-control--register
-							.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between.support-form-field
-								.form-label
-									span Тема
+									span Тема письма
 									span.red-star *
 								input(type="text").form-control.form-control--register
 							.form-group.form-group--register.row.no-gutters.justify-content-between
 								.form-label
-									span Опишите проблему
-									span.red-star *
+									span Текст письма
 								textarea.form-control.form-control--register.textarea-support
 							.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
 								.form-label &nbsp;

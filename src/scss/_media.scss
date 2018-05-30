@@ -6,8 +6,8 @@
 	}
 }
 @media(min-width: 1551px){
-	.content{
-		min-height: 660px;
+	.wrapper{
+		min-height: 1000px;
 	}
 }
 @media(max-width: 1550px){
@@ -121,6 +121,9 @@
 	.btn-brand-left{
 		padding-right: 0;
 		text-align: center;
+	}
+	.category-info{
+		padding-top: 0;
 	}
 	.news-item{
 		padding: 20px;
@@ -327,6 +330,9 @@
 			margin: auto;
 			display: block;
 		}
+	}
+	.support{
+		margin-bottom: 20px;
 	}
 	.search-header__btn{
 		width: 100%;

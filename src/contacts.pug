@@ -1,0 +1,48 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.wrapper
+		include pug/header
+		.content
+			.payment
+			.get-call
+			.container
+				include pug/breadcrumb
+				.text-block.contacts-text
+					h4 Контакты
+					p
+						| г. Санкт-Петербург, пр.Большевиков, д. 47 к.1, офис 20Н. 
+						br
+						| Телефоны:
+						b 8 (812) 983-65-45, 
+						b 8 (812) 642-31-72
+						br
+						| Электронная почта: 
+						b petfood24@mail.ru
+						br
+						| Группа vkontakte: 
+						b http://vk.com/club57
+						br
+						| Отдел контроля качества: 
+						b ok@petfood.ru
+						br
+						| ICQ: 
+						b 691157940
+						br
+						| Skype: 
+						b petfood_24
+				.text-block
+					div ИП Барышников Андрей Вячеславович 
+					div ИНН 781115465170 
+					div ОГРН 305784736200030 
+					div Фактический адрес: 193315 г. Санкт-Петербург, пр. Большевиков, д.47, к.1 помещение 20Н
+				.contacts-map.row.hidden-md
+					.col-lg-7
+						img(src="images/map1.jpg", alt="")
+					.col-lg-5
+						img(src="images/map2.jpg", alt="")
+		include pug/seo
+	include pug/footer.pug
