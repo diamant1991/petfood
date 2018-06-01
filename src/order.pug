@@ -1,0 +1,122 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.wrapper
+		include pug/header
+		.content
+			.payment
+			.get-call
+			.container
+				include pug/breadcrumb
+				.register__item
+					.modal-header.register-header
+						h5 введите контактные данные
+					.register__item__content
+						.register__form
+							.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+								.form-label
+									span Имя
+									span.red-star *
+								input(type="text").form-control.form-control--register
+							.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+								.form-label
+									span Телефон
+									span.red-star *
+								input(type="text").form-control.form-control--register
+							.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+								.form-label
+									span E-mail
+									span.red-star *
+								input(type="text").form-control.form-control--register
+							.order-info
+								.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+									.form-label
+										span Адрес
+										span.red-star *
+									.form-right
+										select.select-item.select-item--modal.select-item--form
+											option г. Москва, ул. Столичная 
+											option г. Москва, ул. Столичная 
+											option г. Москва, ул. Столичная
+								.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+									.form-label
+										span Дом
+										span.red-star *
+									.form-right.row.no-gutters.align-items-center.justify-content-between
+										input(type="text").form-control.form-control--small
+										.form-label.form-label--small
+											span Квартира
+											span.red-star *
+										input(type="text").form-control.form-control--small
+								.form-group.form-group--register.row.no-gutters.justify-content-between
+									.form-label
+										span Примечание
+									textarea.form-control.form-control--register.form-control--text
+				.register__item
+					.modal-header.register-header
+						h5 выберите способ оплаты
+					.register__item__content
+						.register__form
+							.profile-payment
+								.p-title Оплата банковской картой
+								.radio-item
+									input(type="radio" name="payment")#radio.radio
+									label(for="radio")
+										img(src="images/visa.png", alt="")
+										img(src="images/mastercard.png", alt="")
+										img(src="images/sber.png", alt="")
+							.profile-payment
+								.p-title Оплата банковской картой
+								.radio-item
+									input(type="radio" name="payment")#radio2.radio
+									label(for="radio2")
+										img(src="images/nal.png", alt="").cash-img
+							.profile-payment
+								.p-title.middle Понадобиться сдача с
+								input(type="text").form-control.form-control--small.middle
+								.p-title.middle рублей			
+				.order-basket
+					.basket
+						table.basket-table.basket-table--profile
+							thead
+								tr
+									td(colspan="4") Ваши товары
+							tfoot
+								tr
+									td(colspan="2")
+										.b-total-order
+											.table-bottom.b-total-text
+												| Итого: 
+											.table-bottom
+												.b-price-today 1 888 р.
+										div
+											| Общий вес: 
+											b 16 кг
+										div
+											| Кол-во: 
+											b 2
+									td(colspan="2")
+										a(href="#").btn.btn-yellow.b-btn Оформотить заказ
+							tbody
+								tr
+									td 
+										.table-top.table-img
+											img(src="images/product-day.png", alt="")
+										.table-top
+											img(src="images/royal-small.png", alt="")
+											.b-articul Артикул: 90829
+											.b-name Royal Canin Kitten
+											.b-category.b-category--profile Сухой корм для кошек с говяжем мясом	
+									td 
+										| Статус: 
+										b в ожидании
+									td
+										| Количество: 
+										b 2 кг
+									td
+										.b-price-prev 2 000 р.
+										.b-price-today 1 888 р.
+	include pug/footer.pug

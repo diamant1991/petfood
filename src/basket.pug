@@ -1,0 +1,137 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.wrapper
+		include pug/header
+		.content
+			.payment
+			.get-call
+			.container
+				include pug/breadcrumb
+				select.select-item.select-full.visible-md
+					option Ваши товары
+					option Отложенные (2)
+				.news-nav.basket-nav.hidden-md
+					a(href="#").btn.btn-dark.btn-news Ваши товары
+					a(href="#").btn.btn-dark.btn-news Отложенные (2)
+				.basket
+					table.basket-table
+						thead
+							tr
+								td(colspan="2") Ваши товары
+								td Вес
+								td Количество
+								td Стоимость
+								td 
+						tfoot
+							tr
+								td(colspan="4")
+									.b-promo
+										.b-promo__title Введите промо код
+										form
+											input(type="text" placeholder="Код").form-control.form-control--promo
+								td
+									.table-bottom.b-total-text
+										| Итого: 
+									.table-bottom
+										.b-price-prev 2 000 р.
+										.b-price-today 1 888 р.
+								td
+									div
+										| Общая скидка: 
+										b 11%
+									div
+										| Общий вес: 
+										b 16 кг
+									div
+										| Кол-во: 
+										b 2
+									div
+										| Бонусы: 
+										b 121
+						tbody
+							tr
+								td 
+									img(src="images/product-day.png", alt="")
+								td
+									img(src="images/royal-small.png", alt="")
+									.b-articul Артикул: 90829
+									.b-name Royal Canin Kitten
+									.b-category Сухой корм для кошек с говяжем мясом
+								td
+									.b-weight 2кг
+								td
+									.card__info__top.count.b-count.clearfix
+										a(href="#").count-btn
+											i.fa.fa-angle-left
+										input(type="text" value="2").count-field
+										a(href="#").count-btn
+											i.fa.fa-angle-right
+								td
+									.b-price-prev 2 000 р.
+									.b-price-today 1 888 р.
+								td
+									div
+										a(href="#").b-defer
+											span.middle Отложить
+									div
+										a(href="#").b-delete
+											span.middle Удалить
+							tr
+								td 
+									img(src="images/product-day.png", alt="")
+								td
+									img(src="images/royal-small.png", alt="")
+									.b-articul Артикул: 90829
+									.b-name Royal Canin Kitten
+									.b-category Сухой корм для кошек с говяжем мясом
+								td
+									.b-weight 2кг
+								td
+									.card__info__top.count.b-count.clearfix
+										a(href="#").count-btn
+											i.fa.fa-angle-left
+										input(type="text" value="2").count-field
+										a(href="#").count-btn
+											i.fa.fa-angle-right
+								td
+									.b-price-prev 2 000 р.
+									.b-price-today 1 888 р.
+								td
+									div
+										a(href="#").b-defer
+											span.middle Отложить
+									div
+										a(href="#").b-delete
+											span.middle Удалить
+				.basket-btns.row.no-gutters.align-items-center.justify-content-between
+					div 
+						a(href="#").btn.btn-black.b-btn Очистить корзину
+					div
+						a(href="#").btn.btn-black.b-btn Купить в 1 клик
+						a(href="#").btn.btn-yellow.b-btn Оформить заказ
+				.similar-product
+					h3.item-title
+						span.table-cell.item-title__icon
+							img(src="images/title2.png", alt="")
+						span.table-cell Дополните ваш заказ
+					.product-carousel-block
+						.slider-prev.slider-prev--product.slider-prev--carousel
+							i.fa.fa-angle-left
+						.slider-next.slider-next--product.slider-next--carousel
+							i.fa.fa-angle-right
+						.product-carousel
+							div
+								include pug/product-item
+							div
+								include pug/product-item
+							div
+								include pug/product-item
+							div
+								include pug/product-item
+							div
+								include pug/product-item
+	include pug/footer.pug

@@ -1,0 +1,145 @@
+.basket-nav{
+	.btn{
+		+ .btn{
+			margin-left: 20px;
+		}
+	}
+}
+.basket-table{
+	width: 100%;
+	
+
+	td{
+		vertical-align: middle;
+		padding: 15px 20px;
+	}
+	thead{
+		td{
+			text-transform: uppercase;
+			color: $red;
+			font-size: 16px;
+			font-family: $medium;
+			background: #f7f7f7;
+			border-top: 1px solid #f2f2f2;
+			border-bottom: 1px solid #f2f2f2;
+
+			&:first-child{
+				width: 40%;
+				border-left: 1px solid #f2f2f2;
+			}
+		}
+	}
+	tbody{
+		td{
+			border-bottom: 1px solid #f2f2f2;
+
+			&:first-child{
+				width: 230px;
+				border-left: 1px solid #f2f2f2;
+			}
+			&:last-child{
+				border-right: 1px solid #f2f2f2;
+			}
+		}
+	}
+	tfoot{
+		td{
+			padding: 15px 20px;
+			background: #e2ebf1;
+
+			&:first-child{
+				padding-left: 70px;
+			}
+		}
+		
+	}
+}
+.b-articul{
+	font-size: 12px;
+}
+.b-name{
+	margin: 12px 0;
+	font-size: 18px;
+	font-family: $semibold;
+	color: $red;
+}
+.b-category{
+	font-size: 14px;
+	font-family: $medium;
+}
+.b-weight{
+	font-family: $medium;
+}
+.b-defer{
+	display: inline-block;
+	vertical-align: middle;
+	color: $red;
+
+	&:before{
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 10px;
+		width: 19px;
+		height: 19px;
+		background: url(../images/defer.png)no-repeat;
+	}
+}
+.b-delete{
+	font-size: 16px;
+	color: #a6a7a9;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 10px;
+
+	&:before{
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 17px;
+		margin-left: 2px;
+		width: 12px;
+		height: 12px;
+		background: url(../images/delete.png)no-repeat;
+	}
+}
+.b-price-prev{
+	text-decoration: line-through;
+	font-size: 16px;
+}
+.b-price-today{
+	font-size: 24px;
+	font-family: $bold;
+	color: $red;
+}
+.b-count{
+	margin-bottom: 0;
+}
+.form-control--promo{
+	width: 170px;
+	border-radius: 50px;
+	background: none;
+}
+.b-promo__title{
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+.table-bottom{
+	display: table-cell;
+	vertical-align: bottom;
+}
+.b-total-text{
+	padding-bottom: 3px;
+	padding-right: 5px;
+	font-size: 20px;
+}
+.basket-btns{
+	padding: 40px 0;
+}
+.b-btn{
+	width: 210px;
+}
+.basket-nav{
+	margin-bottom: 40px;
+}

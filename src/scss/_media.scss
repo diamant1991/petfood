@@ -39,9 +39,16 @@
 	}
 }
 @media(max-width: 1199px){
+	.basket{
+		overflow: auto;
+	}
 	.top-menu li + li{
 		margin-left: 15px;
 	}
+	.basket-table{
+		width: 1000px;
+	}
+
 	.btn-yellow{
 		width: 225px;
 	}
@@ -246,6 +253,23 @@
 		font-size: 14px;
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+	.basket-btns{
+		> div{
+			width: 100%;
+			padding: 10px 0;
+		}
+		.btn-black{
+			display: block;
+			width: 250px;
+			margin: auto;
+		}
+		.btn-yellow{
+			display: block;
+			width: 250px;
+			margin: auto;
+			margin-top: 20px;
+		}
 	}
 	.search{
 		width: 100%;
@@ -526,5 +550,19 @@
 	}
 	.mobile-menu{
 		top: 134px;
+	}
+		.form-control--text{
+		width: 100%;
+	}
+	.form-right{
+		width: 100%;
+	}
+	.form-control--small{
+		width: 100%;
+		margin: 10px 0;
+	}
+	.form-control--small.middle{
+		width: 100%;
+		margin: 10px 0;
 	}
 }

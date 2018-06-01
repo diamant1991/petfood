@@ -94,6 +94,10 @@
     background: url(../images/select-arrow-grey.png)no-repeat right;
     border-color: #98999c;
   }
+  &--form{
+    width: 100%;
+    height: 30px;
+  }
 }
 .form-control{
   display: block;
@@ -111,6 +115,14 @@
   &--register{
     width: calc(100% - 150px);
   }
+  &--small{
+    width: 80px;
+  }
+  &--text{
+    resize: none;
+    height: 75px;
+    padding: 10px;
+  }
 }
 .form-submit-btn{
   width: calc(100% - 150px);
@@ -119,6 +131,10 @@
   font-size: 14px;
   font-family: $medium;
   width: 115px;
+
+  &--small{
+    width: auto !important;
+  }
 }
 .red-star{
   color: #ff0000;
@@ -147,4 +163,49 @@
   height: 260px;
   padding-top: 15px;
   font-family: $lato;
+}
+
+.radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px;
+}
+.radio + label {
+  position: relative;
+  padding: 0 0 0 60px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: $semibold;
+
+  span{
+    font-family: $lato;
+  }
+}
+.radio + label:before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #888888;
+}
+.radio:checked + label:after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: $red;
+  left: 4px;
+  top: -8px;
+}
+.form-control--small.middle{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+  margin-right: 15px;
 }

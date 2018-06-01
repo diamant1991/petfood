@@ -1,0 +1,38 @@
+.order-info{
+	border-top: 1px solid #e0e0e2;
+	padding-top: 30px;
+}
+.form-right{
+  width: calc(100% - 150px);
+}
+.radio-item{
+	padding: 20px 0;
+}
+.cash-img{
+	position: relative;
+	top: 7px;
+}
+.table-img{
+	width: 175px;
+	text-align: center;
+}
+.basket-table--profile thead td:first-child{
+	width: 100%;
+}
+.basket-table--profile tbody td:first-child{
+	width: 425px;
+}
+.basket-table--profile tfoot td:first-child{
+	padding-left: 195px;
+}
+.b-category--profile{
+	max-width: 165px;
+}
+.b-total-order{
+	margin-bottom: 15px;
+}
+.order-basket{
+	margin-top: 30px;
+	padding-top: 30px;
+	border-top: 1px solid #e1e1e3;
+}

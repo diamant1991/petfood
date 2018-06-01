@@ -21,6 +21,10 @@
 	&-dark{
 		width: 250px;
 		background: $main;
+
+		&:hover{
+			background: $red;
+		}
 	}
 }
 .buttons{
