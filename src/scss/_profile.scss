@@ -1,6 +1,10 @@
 .order-info{
 	border-top: 1px solid #e0e0e2;
 	padding-top: 30px;
+
+	+ .order-info{
+		margin-top: 30px;
+	}
 }
 .form-right{
   width: calc(100% - 150px);
@@ -35,4 +39,100 @@
 	margin-top: 30px;
 	padding-top: 30px;
 	border-top: 1px solid #e1e1e3;
+}
+.profile-nav{
+	padding: 10px;
+	background: #f8f8f8;
+}
+.profile-nav{
+	font-family: $bold;
+	margin-bottom: 20px;
+
+	a{
+		display: inline-block;
+		vertical-align: middle;
+		margin: 10px 25px;
+		color: $red;
+
+		&:hover,
+		&.active{
+			color: $main;
+		}
+	}
+}
+.profile-page{
+	padding-top: 50px;
+}
+.history-table{
+	width: 100%;
+
+	td{
+		vertical-align: top;
+		padding: 15px 20px;
+		background: #f8f8f8;
+		border-bottom: 1px solid #dbdcdd;
+	}
+	tbody{
+		td{
+			font-size: 14px;
+			font-family: $semibold;
+
+			b{
+				font-size: 16px;
+				font-family: $bold;
+			}
+		}
+	}
+	thead{
+		font-size: 18px;
+		font-family: $medium;
+	}
+}
+.profile-info__icon{
+	width: 75px;
+}
+.profile-info__icon__item{
+	width: 75px;
+	height: 75px;
+	background-repeat: no-repeat;
+	background-color: #fff;
+	border-radius: 50%;
+	background-position: 50% 100%;
+}
+.profile-info{
+	padding: 35px;
+	background: #f8f8f8;
+	max-width: 575px;
+	margin-bottom: 25px;
+
+	&__btn{
+		text-align: right;
+		font-family: $bold;
+
+		a{
+			color: $red;
+		}
+		
+	}
+}
+.profile-info__name{
+	font-size: 22px;
+	padding-left: 30px;
+}
+
+.profile-info__header{
+	margin-bottom: 30px;
+}
+.profile-table{
+	td{
+		font-size: 18px;
+		padding-bottom: 15px;
+
+		&:first-child{
+			padding-right: 40px;
+		}
+	}
+}
+.profile-form{
+	max-width: 575px;
 }

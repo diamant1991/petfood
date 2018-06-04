@@ -1,0 +1,99 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.wrapper
+		include pug/header
+		.content
+			.payment
+			.get-call
+			.container
+				include pug/breadcrumb
+				.profile-page
+					select.select-item.select-full.visible-md
+						option Общая информация
+						option История покупок
+						option Питомцы
+					.news-nav.hidden-md
+						a(href="#").btn.btn-dark.btn-news.current Общая информация
+						a(href="#").btn.btn-dark.btn-news История покупок
+						a(href="#").btn.btn-dark.btn-news Питомцы
+					.profile-info
+						.profile-info__header
+							.table-cell.profile-info__icon
+								.profile-info__icon__item(style="background-image: url(images/profile.png)")
+							.table-cell.profile-info__name
+								b Капиляр Андрей Антонович
+						table.profile-table
+							tbody
+								tr
+									td Город: 
+									td 
+										b Москва
+								tr
+									td Телефон: 
+									td 
+										b +7323231312312
+								tr
+									td E-mail: 
+									td 
+										b ffdf@mail.ru
+								tr
+									td Бонусов: 
+									td 
+										b 22
+						.profile-info__btn
+							a(href="#") Изменить данные
+					.register__item.profile-form
+						.modal-header.register-header
+							h5 Личная информация
+						.register__item__content
+							.register__form
+								.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+									.form-label
+										span Фамилия
+									input(type="text").form-control.form-control--register
+								.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+									.form-label
+										span Имя
+									input(type="text").form-control.form-control--register
+								.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+									.form-label
+										span Отчество
+									input(type="text").form-control.form-control--register
+								.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+									.form-label
+										span Адрес
+									.form-right
+										select.select-item.select-item--modal.select-item--form
+											option г. Москва, ул. Столичная 
+											option г. Москва, ул. Столичная 
+											option г. Москва, ул. Столичная
+								.order-info
+									.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+										.form-label
+											span Телефон
+										input(type="text").form-control.form-control--register
+									.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+										.form-label
+											span E-mail
+										input(type="text").form-control.form-control--register
+								.order-info
+									.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+										.form-label
+											span Старый пароль
+										input(type="text").form-control.form-control--register
+									.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+										.form-label
+											span Новый пароль
+										input(type="text").form-control.form-control--register
+									.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+										.form-label
+											span Еще раз
+										input(type="text").form-control.form-control--register
+									.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+										div
+										button(type="submit").link-btn.link-btn--product.link-btn--modal Сохранить
+	include pug/footer.pug

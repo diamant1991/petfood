@@ -1,0 +1,65 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.wrapper
+		include pug/header
+		.content
+			.payment
+			.get-call
+			.container
+				include pug/breadcrumb
+				.profile-page
+					select.select-item.select-full.visible-md
+						option Общая информация
+						option История покупок
+						option Питомцы
+					.news-nav.hidden-md
+						a(href="#").btn.btn-dark.btn-news Общая информация
+						a(href="#").btn.btn-dark.btn-news История покупок
+						a(href="#").btn.btn-dark.btn-news Питомцы
+				.profile-nav
+					a(href="#").active Все 
+					a(href="#") Выполненные
+					a(href="#") Активные
+				.history-wrapp
+					table.history-table
+						thead
+							tr
+								td Номер заказа
+								td Статус
+								td Фин.статус
+								td Форма оплаты
+								td Сумма заказа
+								td Качество доставки
+						tbody
+							tr
+								td
+									b Заказ PS-11298310
+									div 10.03.2018
+								td Выполнен
+								td Оплачен
+								td Наличные
+								td 192 р.
+								td
+							tr
+								td
+									b Заказ PS-11298310
+									div 10.03.2018
+								td Выполнен
+								td Оплачен
+								td Наличные
+								td 192 р.
+								td
+							tr
+								td
+									b Заказ PS-11298310
+									div 10.03.2018
+								td Выполнен
+								td Оплачен
+								td Наличные
+								td 192 р.
+								td
+	include pug/footer.pug

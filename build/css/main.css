@@ -6596,6 +6596,8 @@ h4 {
   width: 180px; }
   .btn-news + .btn {
     margin-left: 1px; }
+  .btn-news.current {
+    background: #fe900f; }
 
 .news {
   padding-bottom: 40px; }
@@ -7628,6 +7630,49 @@ li {
   margin-left: 15px;
   margin-right: 15px; }
 
+.profile-radio__item {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px; }
+
+.profile-radio__item + label {
+  position: relative;
+  padding: 0 0 0 35px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Lato-Semibold"; }
+  .profile-radio__item + label span {
+    font-family: "Lato-Regular"; }
+
+.profile-radio__item + label:before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  border: 1px solid #888888; }
+
+.profile-radio__item:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  background: #fe900f;
+  left: 6px;
+  top: 0; }
+
+.profile-radio + .profile-radio {
+  margin-left: 40px; }
+
 .register__info {
   max-width: 575px;
   padding: 20px 30px;
@@ -7935,6 +7980,8 @@ li {
 .order-info {
   border-top: 1px solid #e0e0e2;
   padding-top: 30px; }
+  .order-info + .order-info {
+    margin-top: 30px; }
 
 .form-right {
   width: -webkit-calc(100% - 150px);
@@ -7971,6 +8018,81 @@ li {
   margin-top: 30px;
   padding-top: 30px;
   border-top: 1px solid #e1e1e3; }
+
+.profile-nav {
+  padding: 10px;
+  background: #f8f8f8; }
+
+.profile-nav {
+  font-family: "Lato-Bold";
+  margin-bottom: 20px; }
+  .profile-nav a {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 25px;
+    color: #fe900f; }
+    .profile-nav a:hover, .profile-nav a.active {
+      color: #3e4146; }
+
+.profile-page {
+  padding-top: 50px; }
+
+.history-table {
+  width: 100%; }
+  .history-table td {
+    vertical-align: top;
+    padding: 15px 20px;
+    background: #f8f8f8;
+    border-bottom: 1px solid #dbdcdd; }
+  .history-table tbody td {
+    font-size: 14px;
+    font-family: "Lato-Semibold"; }
+    .history-table tbody td b {
+      font-size: 16px;
+      font-family: "Lato-Bold"; }
+  .history-table thead {
+    font-size: 18px;
+    font-family: "Lato-Medium"; }
+
+.profile-info__icon {
+  width: 75px; }
+
+.profile-info__icon__item {
+  width: 75px;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  background-position: 50% 100%; }
+
+.profile-info {
+  padding: 35px;
+  background: #f8f8f8;
+  max-width: 575px;
+  margin-bottom: 25px; }
+  .profile-info__btn {
+    text-align: right;
+    font-family: "Lato-Bold"; }
+    .profile-info__btn a {
+      color: #fe900f; }
+
+.profile-info__name {
+  font-size: 22px;
+  padding-left: 30px; }
+
+.profile-info__header {
+  margin-bottom: 30px; }
+
+.profile-table td {
+  font-size: 18px;
+  padding-bottom: 15px; }
+  .profile-table td:first-child {
+    padding-right: 40px; }
+
+.profile-form {
+  max-width: 575px; }
 
 .footer-top {
   background: #3e4146;
@@ -8110,6 +8232,10 @@ li {
     margin-left: 15px; }
   .basket-table {
     width: 1000px; }
+  .history-table {
+    width: 1000px; }
+  .history-wrapp {
+    overflow: auto; }
   .btn-yellow {
     width: 225px; }
   .btn-black {
@@ -8386,7 +8512,7 @@ li {
     font-size: 14px; }
   .register__form .form-label {
     width: 100px;
-    font-size: 14px; }
+    font-size: 13px; }
   .support-form .form-label {
     width: 100%; }
   .support-form .form-control--register {
@@ -8471,12 +8597,21 @@ li {
   .form-control--text {
     width: 100%; }
   .form-right {
-    width: 100%; }
+    width: 100%;
+    margin-top: 15px; }
   .form-control--small {
     width: 100%;
     margin: 10px 0; }
   .form-control--small.middle {
     width: 100%;
-    margin: 10px 0; } }
+    margin: 10px 0; }
+  .profile-info__name {
+    font-size: 16px; }
+  .profile-info {
+    padding: 15px; }
+  .profile-table td {
+    font-size: 16px; }
+  .profile-page {
+    padding-top: 20px; } }
 
 /*# sourceMappingURL=main.css.map */
