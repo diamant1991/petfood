@@ -11,6 +11,9 @@ block content
 			.get-call
 			.container
 				include pug/breadcrumb
+				.register__info 
+						| Если вы уже зарегистрированы, пожалуйста, 
+						a(href="#") Авторизуйтесь 
 				.register__item
 					.modal-header.register-header
 						h5 введите контактные данные
@@ -31,53 +34,85 @@ block content
 									span E-mail
 									span.red-star *
 								input(type="text").form-control.form-control--register
-							.order-info
-								.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
-									.form-label
-										span Адрес
-										span.red-star *
-									.form-right
-										select.select-item.select-item--modal.select-item--form
-											option г. Москва, ул. Столичная 
-											option г. Москва, ул. Столичная 
-											option г. Москва, ул. Столичная
-								.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
-									.form-label
-										span Дом
-										span.red-star *
-									.form-right.row.no-gutters.align-items-center.justify-content-between
-										input(type="text").form-control.form-control--small
-										.form-label.form-label--small
-											span Квартира
+				.register__item
+					.modal-header.register-header
+						h5 Адресс доставки
+					.register__item__content
+						.register__form
+							.form-group.form-group--register
+								.radio-text.middle
+									input(type="radio" name="adress")#radio4.radio
+									label(for="radio4") Адрес доставки
+								.radio-text.middle
+									input(type="radio" name="adress")#radio5.radio
+									label(for="radio5") Самовывоз
+							.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+								.form-label.form-label--small
+									span Город
+									span.red-star *
+								.form-right.form-right--big
+									select.select-item.select-item--modal.select-item--form
+										option г. Москва
+										option г. Москва
+										option г. Москва, ул. Столичная
+							.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+								.form-label.form-label--small
+									span Улица
+									span.red-star *
+								.form-right.form-right--big
+									.row.no-gutters.align-items-center.justify-content-between
+										input(type="text").form-control.form-control--street
+										.form-label.form-label--right
+											span Дом
 											span.red-star *
-										input(type="text").form-control.form-control--small
-								.form-group.form-group--register.row.no-gutters.justify-content-between
-									.form-label
-										span Примечание
-									textarea.form-control.form-control--register.form-control--text
+										input(type="text").form-control.form-control--house
+							.form-group.form-group--register.row.no-gutters.align-items-center.justify-content-between
+								.form-label.form-label--small
+									span Корпус
+								.form-right.form-right--big
+									.row.no-gutters.align-items-center.justify-content-between
+										input(type="text").form-control.form-control--detail
+										.form-label.form-label--right
+											span Квартира
+										input(type="text").form-control.form-control--detail
+										.form-label.form-label--right
+											span Этаж
+										input(type="text").form-control.form-control--detail
+							.form-group.form-group--register.row.no-gutters.justify-content-between
+								.form-label.form-label--small
+									span Время доставки
+								.form-right.form-right--big
+									select.select-item.select-item--modal.select-item--form
+										option Дневная
+										option Дневная
+										option Дневная
+									select.select-item.select-item--modal.select-item--form
+										option Среда - с 08:00 до 15:00
+										option Среда - с 08:00 до 15:00
+										option Среда - с 08:00 до 15:00
 				.register__item
 					.modal-header.register-header
 						h5 выберите способ оплаты
 					.register__item__content
-						.register__form
+						.register__form.register__form--payment
 							.profile-payment
-								.p-title Оплата банковской картой
-								.radio-item
-									input(type="radio" name="payment")#radio.radio
-									label(for="radio")
-										img(src="images/visa.png", alt="")
-										img(src="images/mastercard.png", alt="")
-										img(src="images/sber.png", alt="")
+								.profile-payment__img
+									img(src="images/nal-big.png", alt="")
+								.radio-text.middle
+									input(type="radio" name="payment")#radio1.radio
+									label(for="radio1") Оплата наличными
 							.profile-payment
-								.p-title Оплата банковской картой
-								.radio-item
+								.profile-payment__img
+									img(src="images/visa-big.png", alt="")
+								.radio-text.middle
 									input(type="radio" name="payment")#radio2.radio
-									label(for="radio2")
-										img(src="images/nal.png", alt="").cash-img
+									label(for="radio2") Оплата банковской картой курьеру
 							.profile-payment
-								.p-title.middle Понадобиться сдача с
-								input(type="text").form-control.form-control--small.middle
-								.p-title.middle рублей			
+								.profile-payment__img
+									img(src="images/visa-big.png", alt="")
+								.radio-text.middle
+									input(type="radio" name="payment")#radio3.radio
+									label(for="radio3") Оплата банковской картой онлайн
 				.order-basket
 					.basket
 						table.basket-table.basket-table--profile

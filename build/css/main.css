@@ -7548,6 +7548,15 @@ li {
     resize: none;
     height: 75px;
     padding: 10px; }
+  .form-control--street {
+    width: 185px; }
+  .form-control--house {
+    width: 80px; }
+  .form-control--detail {
+    width: 50px; }
+
+.register__form .form-label--right {
+  width: auto !important; }
 
 .form-submit-btn {
   width: -webkit-calc(100% - 150px);
@@ -7558,7 +7567,7 @@ li {
   font-size: 14px;
   font-family: "Lato-Medium";
   width: 115px; }
-  .form-label--small {
+  .form-label--right {
     width: auto !important; }
 
 .red-star {
@@ -7598,6 +7607,20 @@ li {
   font-family: "Lato-Semibold"; }
   .radio + label span {
     font-family: "Lato-Regular"; }
+
+.radio-text .radio + label {
+  padding-left: 30px;
+  font-size: 16px;
+  font-family: "Lato-Medium";
+  display: inline-block; }
+  .radio-text .radio + label:before {
+    top: 1px; }
+
+.radio-text .radio:checked + label:after {
+  top: 5px; }
+
+.radio-text + .radio-text {
+  margin-left: 40px; }
 
 .radio + label:before {
   content: '';
@@ -7673,6 +7696,23 @@ li {
 .profile-radio + .profile-radio {
   margin-left: 40px; }
 
+.select-item--form + .select-item--form {
+  margin-top: 30px; }
+
+.profile-payment {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  margin: 10px; }
+  .profile-payment__img {
+    height: 115px;
+    line-height: 113px;
+    text-align: center;
+    border: 1px solid #f1f1f1;
+    margin-bottom: 15px; }
+    .profile-payment__img img {
+      vertical-align: middle; }
+
 .register__info {
   max-width: 575px;
   padding: 20px 30px;
@@ -7714,6 +7754,17 @@ li {
   border: 0; }
   .register__item--write .register__item__content {
     padding: 0; }
+
+.register__form .form-label--small {
+  width: 100px; }
+
+.register__form .form-right--big {
+  width: -webkit-calc(100% - 110px);
+  width: -moz-calc(100% - 110px);
+  width: calc(100% - 110px); }
+
+.register__form--payment {
+  width: auto; }
 
 .bonus-title {
   text-align: center;
@@ -8612,6 +8663,21 @@ li {
   .profile-table td {
     font-size: 16px; }
   .profile-page {
-    padding-top: 20px; } }
+    padding-top: 20px; }
+  .form-control--street,
+  .form-control--house,
+  .register__form .form-right--big,
+  .register__form .form-label--small,
+  .form-control--detail {
+    width: 100%; }
+  .form-control--street,
+  .form-control--detail {
+    margin-bottom: 20px; }
+  .form-label--right {
+    margin-bottom: 15px; }
+  .radio-text .radio + label {
+    font-size: 14px; }
+  .radio-text + .radio-text {
+    margin-left: 10px; } }
 
 /*# sourceMappingURL=main.css.map */

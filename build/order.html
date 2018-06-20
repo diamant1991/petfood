@@ -95,6 +95,8 @@
 						<li><a href="#">Главная</a><span class="middle breadcrumb__delimiter">→</span></li>
 						<li>Каталог</li>
 					</ul>
+					<div class="register__info">
+						 Если вы уже зарегистрированы, пожалуйста, <a href="#">Авторизуйтесь </a></div>
 					<div class="register__item">
 						<div class="modal-header register-header">
 							<h5>введите контактные данные</h5>
@@ -113,28 +115,70 @@
 									<div class="form-label"><span>E-mail</span><span class="red-star">*</span></div>
 									<input class="form-control form-control--register" type="text">
 								</div>
-								<div class="order-info">
-									<div class="form-group form-group--register row no-gutters align-items-center justify-content-between">
-										<div class="form-label"><span>Адрес</span><span class="red-star">*</span></div>
-										<div class="form-right">
-											<select class="select-item select-item--modal select-item--form">
-												<option>г. Москва, ул. Столичная </option>
-												<option>г. Москва, ул. Столичная </option>
-												<option>г. Москва, ул. Столичная</option>
-											</select>
+							</div>
+						</div>
+					</div>
+					<div class="register__item">
+						<div class="modal-header register-header">
+							<h5>Адресс доставки</h5>
+						</div>
+						<div class="register__item__content">
+							<div class="register__form">
+								<div class="form-group form-group--register">
+									<div class="radio-text middle">
+										<input class="radio" type="radio" name="adress" id="radio4">
+										<label for="radio4">Адрес доставки</label>
+									</div>
+									<div class="radio-text middle">
+										<input class="radio" type="radio" name="adress" id="radio5">
+										<label for="radio5">Самовывоз</label>
+									</div>
+								</div>
+								<div class="form-group form-group--register row no-gutters align-items-center justify-content-between">
+									<div class="form-label form-label--small"><span>Город</span><span class="red-star">*</span></div>
+									<div class="form-right form-right--big">
+										<select class="select-item select-item--modal select-item--form">
+											<option>г. Москва</option>
+											<option>г. Москва</option>
+											<option>г. Москва, ул. Столичная</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group form-group--register row no-gutters align-items-center justify-content-between">
+									<div class="form-label form-label--small"><span>Улица</span><span class="red-star">*</span></div>
+									<div class="form-right form-right--big">
+										<div class="row no-gutters align-items-center justify-content-between">
+											<input class="form-control form-control--street" type="text">
+											<div class="form-label form-label--right"><span>Дом</span><span class="red-star">*</span></div>
+											<input class="form-control form-control--house" type="text">
 										</div>
 									</div>
-									<div class="form-group form-group--register row no-gutters align-items-center justify-content-between">
-										<div class="form-label"><span>Дом</span><span class="red-star">*</span></div>
-										<div class="form-right row no-gutters align-items-center justify-content-between">
-											<input class="form-control form-control--small" type="text">
-											<div class="form-label form-label--small"><span>Квартира</span><span class="red-star">*</span></div>
-											<input class="form-control form-control--small" type="text">
+								</div>
+								<div class="form-group form-group--register row no-gutters align-items-center justify-content-between">
+									<div class="form-label form-label--small"><span>Корпус</span></div>
+									<div class="form-right form-right--big">
+										<div class="row no-gutters align-items-center justify-content-between">
+											<input class="form-control form-control--detail" type="text">
+											<div class="form-label form-label--right"><span>Квартира</span></div>
+											<input class="form-control form-control--detail" type="text">
+											<div class="form-label form-label--right"><span>Этаж</span></div>
+											<input class="form-control form-control--detail" type="text">
 										</div>
 									</div>
-									<div class="form-group form-group--register row no-gutters justify-content-between">
-										<div class="form-label"><span>Примечание</span></div>
-										<textarea class="form-control form-control--register form-control--text"></textarea>
+								</div>
+								<div class="form-group form-group--register row no-gutters justify-content-between">
+									<div class="form-label form-label--small"><span>Время доставки</span></div>
+									<div class="form-right form-right--big">
+										<select class="select-item select-item--modal select-item--form">
+											<option>Дневная</option>
+											<option>Дневная</option>
+											<option>Дневная</option>
+										</select>
+										<select class="select-item select-item--modal select-item--form">
+											<option>Среда - с 08:00 до 15:00</option>
+											<option>Среда - с 08:00 до 15:00</option>
+											<option>Среда - с 08:00 до 15:00</option>
+										</select>
 									</div>
 								</div>
 							</div>
@@ -145,25 +189,27 @@
 							<h5>выберите способ оплаты</h5>
 						</div>
 						<div class="register__item__content">
-							<div class="register__form">
+							<div class="register__form register__form--payment">
 								<div class="profile-payment">
-									<div class="p-title">Оплата банковской картой</div>
-									<div class="radio-item">
-										<input class="radio" type="radio" name="payment" id="radio">
-										<label for="radio"><img src="images/visa.png" alt=""><img src="images/mastercard.png" alt=""><img src="images/sber.png" alt=""></label>
+									<div class="profile-payment__img"><img src="images/nal-big.png" alt=""></div>
+									<div class="radio-text middle">
+										<input class="radio" type="radio" name="payment" id="radio1">
+										<label for="radio1">Оплата наличными</label>
 									</div>
 								</div>
 								<div class="profile-payment">
-									<div class="p-title">Оплата банковской картой</div>
-									<div class="radio-item">
+									<div class="profile-payment__img"><img src="images/visa-big.png" alt=""></div>
+									<div class="radio-text middle">
 										<input class="radio" type="radio" name="payment" id="radio2">
-										<label for="radio2"><img class="cash-img" src="images/nal.png" alt=""></label>
+										<label for="radio2">Оплата банковской картой курьеру</label>
 									</div>
 								</div>
 								<div class="profile-payment">
-									<div class="p-title middle">Понадобиться сдача с</div>
-									<input class="form-control form-control--small middle" type="text">
-									<div class="p-title middle">рублей			</div>
+									<div class="profile-payment__img"><img src="images/visa-big.png" alt=""></div>
+									<div class="radio-text middle">
+										<input class="radio" type="radio" name="payment" id="radio3">
+										<label for="radio3">Оплата банковской картой онлайн</label>
+									</div>
 								</div>
 							</div>
 						</div>

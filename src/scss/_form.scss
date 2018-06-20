@@ -123,6 +123,18 @@
     height: 75px;
     padding: 10px;
   }
+  &--street{
+    width: 185px;
+  }
+  &--house{
+    width: 80px;
+  }
+  &--detail{
+    width: 50px;
+  }
+}
+.register__form .form-label--right{
+  width: auto !important;
 }
 .form-submit-btn{
   width: calc(100% - 150px);
@@ -132,7 +144,7 @@
   font-family: $medium;
   width: 115px;
 
-  &--small{
+  &--right{
     width: auto !important;
   }
 }
@@ -181,6 +193,22 @@
   span{
     font-family: $lato;
   }
+}
+.radio-text .radio + label{
+  padding-left: 30px;
+  font-size: 16px;
+  font-family: $medium;
+  display: inline-block;
+
+  &:before{
+    top: 1px;
+  }
+}
+.radio-text .radio:checked + label:after{
+  top: 5px;
+}
+.radio-text + .radio-text{
+  margin-left: 40px;
 }
 .radio + label:before {
   content: '';
@@ -250,4 +278,25 @@
 }
 .profile-radio + .profile-radio{
   margin-left: 40px;
+}
+.select-item--form + .select-item--form{
+  margin-top: 30px;
+}
+.profile-payment{
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  margin: 10px;
+
+  &__img{
+    height: 115px;
+    line-height: 113px;
+    text-align: center;
+    border: 1px solid #f1f1f1;
+    margin-bottom: 15px;
+
+    img{
+      vertical-align: middle;
+    }
+  }
 }

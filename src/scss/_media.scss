@@ -583,4 +583,24 @@
 	.profile-page{
 		padding-top: 20px;
 	}
+	.form-control--street,
+	.form-control--house,
+	.register__form .form-right--big,
+	.register__form .form-label--small,
+	.form-control--detail{
+		width: 100%;
+	}
+	.form-control--street,
+	.form-control--detail{
+		margin-bottom: 20px;
+	}
+	.form-label--right{
+		margin-bottom: 15px;
+	}
+	.radio-text .radio + label{
+		font-size: 14px;
+	}
+	.radio-text + .radio-text{
+		margin-left: 10px;
+	}
 }
